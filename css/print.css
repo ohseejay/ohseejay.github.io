@@ -1,0 +1,87 @@
+/* Timothy Framework - www.timothyframework.com */
+/* This work is licensed under the MIT License - http://www.opensource.org/licenses/mit-license.php */
+
+
+/* Color Legend */
+
+
+/* Containers */
+
+#body			{ font-family:Arial, Helvetica, sans-serif;   }
+
+#print-banner		{ display:block; }
+#print-banner h1	{ font-size:24px; font-weight:bold; margin:1.5em 0 .5em 0; 
+					font-family:Arial, Helvetica, sans-serif; 	}
+#print-banner h2	{ font-size:18px; font-weight:bold; margin:.5em 0;
+					font-family:Arial, Helvetica, sans-serif; 	}
+#print-banner h3	{ font-size:14px; font-weight:bold; margin:.5em 0;
+					font-family:Arial, Helvetica, sans-serif; 	}
+
+#name 			{ display:none;     }
+#logo 			{ display:none;     }
+#slogan 			{ display:none;     }
+#tagline 			{ display:none;     }
+
+#top	 			{ display:none;     }
+#top-bg			{ display:none;	}
+#top-wrap			{ display:none;	}
+
+#banner 			{ display:none;     }
+#banner-bg		{ display:none;	}
+#banner-wrap		{ display:none;	}
+
+#subbanner 		{ display:none;     }
+#subbanner-bg		{ display:none;	}
+#subbanner-wrap	{ display:none;	}
+
+#social-media		{ display:none;	}
+
+#topnav 			{ display:none;     }
+#topnav-bg		{ display:none;	}
+#topnav-wrap		{ display:none;	}
+
+#content-wrapper-bg		{ display:none;	}
+#content-wrapper-wrap	{ display:none;	}
+#content-wrapper 		{ display:none;     }
+
+#leftnav 			{ display:none;    }
+
+#leftside 		{ display:none;   }
+
+#rightside 		{ display:none;   }
+
+#content 			{ display:block; width:100%;    }
+#content-bg		{ display:none;	}
+#content-wrap		{ display:none;	}
+
+#content h1		{ font-size:32pt; font-weight:bold; margin:1em 0 .25em 0; color:#000;
+					font-family:Arial, Helvetica, sans-serif;	}
+#content h2		{ font-size:24pt; font-weight:bold; margin:1em 0 .25em 0; color:#000;
+					font-family:Arial, Helvetica, sans-serif; 	}
+#content h3		{ font-size:16pt; font-weight:bold; margin:1em 0 .25em 0; color:#000;
+					font-family:Arial, Helvetica, sans-serif; }
+#content p		{ font-size:10pt; font-weight:normal; margin:.75em 0; line-height:140%; color:#000;
+					font-family:Arial, Helvetica, sans-serif;	}
+#content img		{ margin:5pt 15pt 0 0; float:left;	}
+#content li		{ font-size:11px; font-weight:normal; margin:.5em 4em; line-height:140%; color:#000;
+					font-family:Arial, Helvetica, sans-serif;	}
+					
+#content a		{ font-family:Arial, Helvetica, sans-serif;	}
+
+#content a:link		{ color:#000; text-decoration:none;	}
+#content a:visited		{ color:#000; text-decoration:none;	}
+#content a:active		{ color:#000; text-decoration:none;	}
+#content a:hover		{ color:#000; text-decoration:none;	}
+#content a:focus		{ color:#000; text-decoration:none;	}
+
+#footer 			{ display:none;    }
+#footer-bg		{ display:none;	}
+#footer-wrap		{ display:none;	}
+
+#bottom 			{ display:none;    }
+#bottom-bg		{ display:none;	}
+#bottom-wrap		{ display:none;	}
+
+#print-footer		{ display:block; border-top:1pt #ccc solid;  margin-top:2em; }
+#print-footer h4	{ font-size:9pt; font-weight:normal; font-style:normal; margin:.5em 0 0 0;
+					font-family:Arial, Helvetica, sans-serif;  }
