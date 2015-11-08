@@ -1,0 +1,1032 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>JabRef References output</title>
+<meta http-equiv="Content-Type" content="text/html; charset=MacRoman">
+<script type="text/javascript">
+<!--
+// QuickSearch script for JabRef HTML export 
+// Version: 2.0
+//
+// Copyright (c) 2006-2008, Mark Schenk
+//
+// This software is distributed under a Creative Commons Attribution 3.0 License
+// http://creativecommons.org/licenses/by/3.0/
+
+// Some features:
+// + allows RegExp searches
+//   e.g. to search for entries between 1980 and 1989, type:  198[0-9]
+//   e.g. for any entry ending with 'symmetry', type:  symmetry$
+//   e.g. for all reftypes that are books: ^book$, or ^article$
+//   e.g. for entries by either John or Doe, type john|doe
+
+// Speed optimisation introduced some esoteric problems with certain RegExp searches
+// e.g. if the previous search is 200[-7] and the next search is 200[4-7] then the search doesn't work properly until the next 'keyup'
+// hence the searchOpt can be turned off for RegExp adepts
+var searchOpt = true;
+
+if (window.addEventListener) {
+	window.addEventListener("load",initSearch,false); }
+else if (window.attachEvent) {
+	window.attachEvent("onload", initSearch); }
+
+function initSearch() {
+	// basic object detection
+	if(!document.getElementById || !document.getElementsByTagName) { return; }
+	if (!document.getElementById('qstable')||!document.getElementById('qs')) { return; }
+
+	// find QS table and appropriate rows
+	searchTable = document.getElementById('qstable');
+	var allRows = searchTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+	// split all rows into entryRows and infoRows (e.g. abstract, review, bibtex)
+	entryRows = new Array();
+	infoRows = new Array();
+
+	for (var i=0, k=0, j=0; i<allRows.length;i++) {
+		if (allRows[i].className.indexOf('entry') != -1) {
+			entryRows[j++] = allRows[i];
+		} else {
+			infoRows[k++] = allRows[i];		
+		}
+	}
+
+	//number of entries and rows
+	numRows = allRows.length;
+	numEntries = entryRows.length;
+	numInfo = infoRows.length;
+
+	//find the query field
+	qsfield = document.getElementById('qsfield');
+
+	// previous search term; used for speed optimisation
+	prevSearch = '';
+
+	//find statistics location
+	stats = document.getElementById('stat');
+	setStatistics(-1);
+
+	// shows the searchfield
+	document.getElementById('qs').style.display = 'block';
+	document.getElementById('qsfield').onkeyup = testEvent;
+}
+
+function quickSearch(tInput){
+
+	 if (tInput.value.length == 0) {
+		showAll();
+		setStatistics(-1);
+		qsfield.className = '';
+		return;
+	} else {
+		// only search for valid RegExp
+		try {
+			var searchText = new RegExp(tInput.value,"i")
+			closeAllInfo();
+			qsfield.className = '';
+		}
+		catch(err) {
+			prevSearch = tInput.value;
+			qsfield.className = 'invalidsearch';
+			return;
+		}
+	}
+	
+	// count number of hits
+	var hits = 0;
+
+	// start looping through all entry rows
+	for (var i = 0; cRow = entryRows[i]; i++){
+
+		// only show search the cells if it isn't already hidden OR if the search term is getting shorter, then search all
+		// some further optimisation is possible: if the search string is getting shorter, and the row is already visible, skip it. Future work.
+		if(!searchOpt || cRow.className.indexOf('noshow')==-1 || tInput.value.length <= prevSearch.length){
+			var found = false; 
+
+			var inCells = cRow.getElementsByTagName('td');
+			var numCols = inCells.length;
+				
+			for (var j=0; j<numCols; j++) {
+				cCell = inCells[j];
+				var t = cCell.innerText?cCell.innerText:getTextContent(cCell);
+				if (t.search(searchText) != -1){ 
+					found=true; 
+					break;
+				} 
+			}
+			
+			if(found) {
+				cRow.className = 'entry show';
+				hits++;
+			} else {
+				cRow.className = 'entry noshow';
+			}
+		}
+	}
+
+	// update statistics
+	setStatistics(hits)
+	
+	// set previous search value
+	prevSearch = tInput.value;
+}
+
+function setStatistics (hits) {
+	if(hits < 0) { hits=numEntries; }
+	if(stats) { stats.firstChild.data = hits + '/' + numEntries}
+}
+
+function getTextContent(node) {
+	// Function written by Arve Bersvendsen
+	// http://www.virtuelvis.com
+	
+	if (node.nodeType == 3) {
+	return node.nodeValue;
+	} // text node
+	if (node.nodeType == 1) { // element node
+	var text = [];
+	for (var chld = node.firstChild;chld;chld=chld.nextSibling) {
+		text.push(getTextContent(chld));
+	}
+	return text.join("");
+	} return ""; // some other node, won't contain text nodes.
+}
+
+function showAll(){
+	// first close all abstracts, reviews, etc.
+	closeAllInfo();
+
+	for (var i = 0; i < numEntries; i++){
+		entryRows[i].className = 'entry show'; 
+	}
+}
+
+function closeAllInfo(){
+	for (var i=0; i < numInfo; i++){
+		if (infoRows[i].className.indexOf('noshow') ==-1) {
+			infoRows[i].className = infoRows[i].className + ' noshow';
+		}
+	}
+}
+
+function testEvent(e){
+	if (!e) var e = window.event;
+	quickSearch(this);
+}
+
+function clearQS() {
+	qsfield.value = '';
+	quickSearch(qsfield);
+}
+
+function redoQS(){
+	showAll();
+	quickSearch(qsfield);
+}
+-->
+</script>
+<style type="text/css">
+body { background-color: white; font-family: "Trebuchet MS", Arial, sans-serif; font-size: 12px; line-height: 1.2; padding: 1em; color: #2E2E2E; }
+
+#qs { width: auto; border-style: solid; border-color: gray; border-width: 1px 1px 0px 1px; padding: 0.5em 0.5em; display:none;  }
+#qs form { padding: 0px; margin: 0px; }
+#qs form p { padding: 0px; margin: 0px; }
+
+.invalidsearch { background-color: red; }
+
+table { border: 1px gray solid; width: 100%; empty-cells: show; }
+th, td { border: 1px gray solid; padding: 0.5em; vertical-align: top;  }
+td { text-align: left; vertical-align: top; }
+th { background-color: #EFEFEF; }
+
+td a { color: navy; text-decoration: none; }
+td a:hover  { text-decoration: underline; }
+
+tr.noshow { display: none;}
+
+@media print {
+	p.infolinks, #qssettings, #qs { display: none !important; }
+	table { border-width: 0px; }
+	tr { page-break-inside: avoid; }
+	tr > * + * + * + * + * {display: none; }
+	thead tr::before { content: "Reference"; border: 1px gray solid; padding: 0.5em; vertical-align: top; font-weight: bold; text-align: center; display: table-cell; background-color: #EFEFEF; }
+	tr[id]::before { content: attr(id); display: table-cell; border: 1px gray solid; padding: 0.5em; vertical-align: top; font-style: italic; }
+}
+</style>
+</head>
+<body>
+
+<div id="qs"><form action=""><p>QuickSearch: <input type="text" name="qsfield" id="qsfield" autocomplete="off" title="Allows plain text as well as RegExp searches" /><input type="button" onclick="clearQS()" value="clear" />&nbsp; Number of matching entries: <span id="stat">0</span>.</p></form></div>
+<table id="qstable" border="1">
+<thead><tr><th width="20%">Author</th><th width="30%">Title</th><th width="5%">Year</th><th width="30%">Journal/Proceedings</th><th width="10%">Reftype</th><th width="5%">DOI/URL</th></tr></thead>
+<tbody><tr id="Andersonetal2009aimag" class="entry">
+	<td>Anderson, M., Jenkins, O. &amp; Oh, P.</td>
+	<td>The 17th Annual AAAI Robot Exhibition and Manipulation and Mobility Workshop</td>
+	<td>2009</td>
+	<td>AI Magazine<br/>Vol. 30(1), pp. 95-102&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.aaai.org/ojs/index.php/aimagazine/article/view/2208">URL</a>&nbsp;</td>
+</tr>
+<tr id="BergCrossCrick2010permis" class="entry">
+	<td>Berg-Cross, G. &amp; Crick, C.</td>
+	<td>Intentions and intention recognition in intelligent agents</td>
+	<td>2010</td>
+	<td>Performance Metrics for Intelligent Systems (PerMIS) Workshop&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Bluethmannetal2004humanoids" class="entry">
+	<td>Bluethmann, W., Ambrose, R., Diftler, M., Huber, E., Fagg, A., Rosenstein, M., Platt, R., Grupen, R., Breazeal, C., Brooks, A., Lockerd, A., Peters, R.A., Jenkins, O.C., Matari&#263;, M.J. &amp; Bugajska, M.</td>
+	<td>Building an Autonomous Humanoid Tool User</td>
+	<td>2004</td>
+	<td>IEEE International Conference on Humanoid Robots (Humanoids 2004), pp. 402-421&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="http://cres.usc.edu/cgi-bin/print_pub_details.pl?pubid=424">URL</a>&nbsp;</td>
+</tr>
+<tr id="Bulleretal2010iaai" class="entry">
+	<td>Buller, M., Tharion, W., Hoyt, R. &amp; Jenkins, O.</td>
+	<td>Estimation of Human Internal Temperature from Wearable Physiological Sensors</td>
+	<td>2010</td>
+	<td>Innovative Applications in Artificial Intelligence&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Bulleretal2010spie" class="entry">
+	<td>Buller, M., Welles, A., O.Jenkins &amp; Hoyt, R.</td>
+	<td>Extreme health sensing: the challenges, technologies, and strategies for active health sustainment of military personnel during training and combat missions</td>
+	<td>2010</td>
+	<td>SPIE Sensors, and Command, Control, Communications, and Intelligence (C3I) Technologies for Homeland Security and Homeland Defense IX (Conference 7666)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Butterfieldetal2008wmcnr" class="entry">
+	<td>Butterfield, J., Dantu, K., Gerkey, B., Jenkins, O. &amp; Sukhatme, G.</td>
+	<td>Autonomous Biconnected Networks of Mobile Robots</td>
+	<td>2008</td>
+	<td> Wireless Multihop Communications in Networked Robotics, pp. 640-646&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../jbutterf_wmcnr2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Butterfieldetal2008aamas" class="entry">
+	<td>Butterfield, J., Gerkey, B. &amp; Jenkins, O.</td>
+	<td>Multi-robot Markov Random Fields</td>
+	<td>2008</td>
+	<td>Autonomous Agents and Multi Agent Systems (AAMAS 2008), pp. 1211-1214&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../jbutterf_aamas2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Butterfieldetal2008ijsr" class="entry">
+	<td>Butterfield, J., Jenkins, O.C., Sobel, D. &amp; Schwertfeger, J.</td>
+	<td>Modeling Aspects of Theory of Mind with Markov Random Fields</td>
+	<td>2009</td>
+	<td>International Journal of Social Robotics<br/>Vol. 1(1), pp. 41-51&nbsp;</td>
+	<td>article</td>
+	<td><a href="../jbutterf_ijsr2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Butterfieldetal2010humanoids" class="entry">
+	<td>Butterfield, J., Osentoski, S., Jay, G. &amp; Jenkins, O.</td>
+	<td>Learning from Demonstration using a Multi-valued Function Regressor for Time-series Data</td>
+	<td>2010</td>
+	<td>IEEE-RAS International Conference on Humanoid Robots (Humanoids 2010), pp. 328-333&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Byersetal2008aaai" class="entry">
+	<td>Byers, D., Lapping-Carr, M., Kumar, J., Hinkle, T., Grollman, D. &amp; Jenkins, O.</td>
+	<td>Game-based Robot Learning</td>
+	<td>2008</td>
+	<td>AAAI 2008 Video Program (Best Student Video)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Byersetal2008hri" class="entry">
+	<td>Byers, D., Lapping-Carr, M., Kumar, J., Hinkle, T., Grollman, D. &amp; Jenkins, O.</td>
+	<td>Brown Robotics: Game-based Learning</td>
+	<td>2008</td>
+	<td>HRI 2008 Video Program&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="ChangJenkins2006sca" class="entry">
+	<td>Chang, E. &amp; Jenkins, O.</td>
+	<td>Sketching Articulation and Pose for Facial Animation</td>
+	<td>2006</td>
+	<td>ACM SIGGRAPH/Eurographics Symposium on Computer Animation (SCA 2006)&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../sca_final.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="ChangJenkins2007facialbook" class="entry">
+	<td>Chang, E. &amp; Jenkins, O.C.</td>
+	<td>Sketching Articulation and Pose for Facial Animation</td>
+	<td>2007</td>
+	<td>Data-Driven 3D Facial Animation, pp. 132-144&nbsp;</td>
+	<td>incollection</td>
+	<td><a href="http://www.springer.com/978-1-84628-906-4">URL</a>&nbsp;</td>
+</tr>
+<tr id="Chuetal2003" class="entry">
+	<td>Chu, C.-W., Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>Markerless Kinematic Model and Motion Capture from Volume Sequences</td>
+	<td>2003</td>
+	<td>IEEE Computer Vision and Pattern Recognition (CVPR 2003), pp. II: 475-482&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../cvpr2003.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Chuetal2002" class="entry">
+	<td>Chu, C.-W., Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>Converting Sequences of Human Volumes into Kinematic Motion</td>
+	<td>2002</td>
+	<td>(CRES-02-003)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="../volcap.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Cricketal2011hri" class="entry">
+	<td>Crick, C., Osentoski, S., Jay, G. &amp; Jenkins, O.</td>
+	<td>Human and robot perception in large-scale learning from demonstration</td>
+	<td>2011</td>
+	<td>ACM/IEEE International Conference on Human-Robot Interaction (HRI 2011)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Dickinsonetal2007aaai" class="entry">
+	<td>Dickinson, B., Jenkins, O., Moseley, M., Bloom, D. &amp; Hartmann, D.</td>
+	<td>Roomba Pac-Man: Teaching Autonomous Robotics through Embodied Gaming</td>
+	<td>2007</td>
+	<td>AAAI Symposium on Robot and Robot Venues: Resources for AI Education, pp. 35-39&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../bcd_aaai07.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Drumwrightetal2004icra" class="entry">
+	<td>Drumwright, E., Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>Exemplar-Based Primitives for Humanoid Movement Classification and Control</td>
+	<td>2004</td>
+	<td>IEEE International Conference on Robotics and Automation, pp. 140-145&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="http://cres.usc.edu/cgi-bin/print_pub_details.pl?pubid=356">URL</a>&nbsp;</td>
+</tr>
+<tr id="Eroletal2003" class="entry">
+	<td>Erol, D., Park, J., Turkay, E., Kawamura, K., Jenkins, O. &amp; Matari&#263;, M.</td>
+	<td>Motion Generation for Humanoid Robots with Automatically Derived Behaviors</td>
+	<td>2003</td>
+	<td>IEEE Systems, Man, and Cybernetics (SMC 2003), pp. 1816-1822&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../smc2003.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Fodetal2002" class="entry">
+	<td>Fod, A., Matari&#263;, M. &amp; Jenkins, O.</td>
+	<td>Automated Derivation of Primitives for Movement Classification</td>
+	<td>2002</td>
+	<td>Autonomous Robots<br/>Vol. 12(1), pp. 39-54&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www-robotics.usc.edu/~cjenkins/papers/ar2002_fod.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Fodetal2000" class="entry">
+	<td>Fod, A., Matari&#263;, M. &amp; Jenkins, O.</td>
+	<td>Automated Derivation of Primitives for Movement Classification</td>
+	<td>2000</td>
+	<td>IEEE-RAS International Conference on Humanoid Robots (Humanoids 2000)&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../21j.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins2007icdl" class="entry">
+	<td>Grollman, D. &amp; Jenkins, O.</td>
+	<td>Learning Elements of Robot Soccer from Demonstration</td>
+	<td>2007</td>
+	<td>International Conference on Development and Learning (ICDL 2007), pp. 276-281&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../dang_ICDL_2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins2007icra" class="entry">
+	<td>Grollman, D. &amp; Jenkins, O.</td>
+	<td>Dogged Learning for Robots</td>
+	<td>2007</td>
+	<td>International Conference on Robotics and Automation (ICRA 2007), pp. 2483-2488&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../dang_ICRA_2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins2008iroswk" class="entry">
+	<td>Grollman, D. &amp; Jenkins, O.C.</td>
+	<td>Learning multi-objective robot control policies from demonstration</td>
+	<td>2008</td>
+	<td>International Conference on Intelligent Robots and Systems Workshop on Robot Learning&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../dang_iros2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="GrollmanDissertation" class="entry">
+	<td>Grollman, D.H.</td>
+	<td>Teaching Old Dogs New Tricks: Incremental Multimap Regression for Interactive Robot Learning from Demonstration</td>
+	<td>2010</td>
+	<td><i>School</i>: Brown University&nbsp;</td>
+	<td>phdthesis</td>
+	<td><a href="../dang_dissertation.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins2010iros" class="entry">
+	<td>Grollman, D.H. &amp; Jenkins, O.C.</td>
+	<td>Incremental Learning of Subtasks from Unsegmented Demonstration</td>
+	<td>2010</td>
+	<td>International Conference on Intelligent Robots and Systems (IROS 2010), pp. 261-266&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins_2009fmilr" class="entry">
+	<td>Grollman, D.H. &amp; Jenkins, O.C.</td>
+	<td>Can We Learn Finite State Machine Robot Controllers from Interactive Demonstration?</td>
+	<td>2009</td>
+	<td>From Motor to Interaction Learning in Robots, pp. 405-429&nbsp;</td>
+	<td>incollection</td>
+	<td><a href="../dang_fmilr2009.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins_2009rss" class="entry">
+	<td>Grollman, D.H. &amp; Jenkins, O.C.</td>
+	<td>Multimap Regression for Perceptual Aliasing in Learning Finite State Machine Robot Controllers from Interactive Demonstration</td>
+	<td>2009</td>
+	<td>Robotics: Science and Systems Workshop on Regression in Robotics&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins2008icra" class="entry">
+	<td>Grollman, D.H. &amp; Jenkins, O.C.</td>
+	<td>Sparse Incremental Learning for Interactive Robot Control Policy Estimation</td>
+	<td>2008</td>
+	<td>International Conference on Robotics and Automation (ICRA 2008), pp. 3315-3320&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../dang_icra2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins2007nips" class="entry">
+	<td>Grollman, D.H. &amp; Jenkins, O.C.</td>
+	<td>(Machine) Learning Robot Control Policies</td>
+	<td>2007</td>
+	<td>NIPS 2007 Workshop on Robotics challenges for Machine Learning &nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../GrollmanJenkins_NIPS2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="GrollmanJenkins2007rss" class="entry">
+	<td>Grollman, D.H. &amp; Jenkins, O.C.</td>
+	<td>Learning Robot Soccer from Demonstration: Ball Grasping</td>
+	<td>2007</td>
+	<td>Robotics: Science and Systems - Robot Manipulation: Sensing and Adapting to the Real World&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../dang_RSS_2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Grollmanetal2006jfr" class="entry">
+	<td>Grollman, D.H., Jenkins, O.C. &amp; Wood, F.</td>
+	<td>Discovering Natural Kinds of Robot Sensory Experiences in Unstructured Environments</td>
+	<td>2006</td>
+	<td>Journal of Field Robotics<br/>Vol. 23(11-12), pp. 1077-1089&nbsp;</td>
+	<td>article</td>
+	<td><a href="../JFR_2006_dang.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Grollmanetal2005" class="entry">
+	<td>Grollman, D.H., Jenkins, O.C. &amp; Wood, F.</td>
+	<td>Extensible Data-driven Classification of Robot Sensor Data</td>
+	<td>2005</td>
+	<td>(Technical Report, cs05-11)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="http://www.cs.brown.edu/publications/techreports/reports/CS-05-11.html">URL</a>&nbsp;</td>
+</tr>
+<tr id="Grollmanetal2005nips" class="entry">
+	<td>Grollman, D.H., Jenkins, O.C. &amp; Wood, F.</td>
+	<td>Discovering Natural Kinds of Robot Sensory Experiences in Unstructured Environments</td>
+	<td>2005</td>
+	<td>NIPS 2005 Workshop on Machine Learning Based Robotics in Unstructured Environments&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../nips_mlrobotics.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2006icdl" class="entry">
+	<td>Jenkins, O., Bodenheimer, R. &amp; Peters, R.</td>
+	<td>Manipulation Manifolds: Explorations into Uncovering Manifolds in Sensory-motor Spaces (8 pages)</td>
+	<td>2006</td>
+	<td>International Conference on Development and Learning (ICDL 2006)&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../icdl_cjenkins.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2007hri" class="entry">
+	<td>Jenkins, O., Gonz&aacute;lez, G. &amp; Loper, M.</td>
+	<td>Tracking Human Motion and Actions for Interactive Robots</td>
+	<td>2007</td>
+	<td>Human-Robot Interaction (HRI 2007), pp. 365-372&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../hri212-jenkins.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2007hribook" class="entry">
+	<td>Jenkins, O., Gonz&aacute;lez, G. &amp; Loper, M.</td>
+	<td>Recognizing Human Pose and Actions for Interactive Robots</td>
+	<td>2007</td>
+	<td>Human-Robot Interaction, pp. 119-138&nbsp;</td>
+	<td>incollection</td>
+	<td><a href="http://www.intechweb.org/book.php?id=20&content=title&sid=1&PHPSESSID=mopvuqnussavp3potanvu5slq6">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2006aaai" class="entry">
+	<td>Jenkins, O., Gonz&aacute;lez, G. &amp; Loper, M.</td>
+	<td>Monocular Virtual Trajectory Estimation with Dynamical Primitives</td>
+	<td>2006</td>
+	<td>AAAI 2006 Cognitive Robotics Workshop&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../cogrob_cjenkins.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2006cvpr" class="entry">
+	<td>Jenkins, O., Gonz&aacute;lez, G. &amp; Loper, M.</td>
+	<td>Learning Dynamical Motion Vocabularies for Kinematic Tracking and Activity Recognition</td>
+	<td>2006</td>
+	<td>CVPR 2006 Workshop on Vision for Human-Computer Interaction&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2007ijhr" class="entry">
+	<td>Jenkins, O., Gonzalez, G. &amp; Loper, M.</td>
+	<td>Interactive Human Pose and Action Recognition using Dynamical Motion Primitives</td>
+	<td>2007</td>
+	<td>International Journal of Humanoid Robotics<br/>Vol. 4(2), pp. 365-385&nbsp;</td>
+	<td>article</td>
+	<td><a href="../cjenkins_ijhr2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2006rss" class="entry">
+	<td>Jenkins, O., Peters, R. &amp; Bodenheimer, R.</td>
+	<td>Uncovering Success in Manipulation</td>
+	<td>2006</td>
+	<td>Robotics: Science and Systems Workshop on Manipulation in Human Environments&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../rss06manip.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2007humanoids" class="entry">
+	<td>Jenkins, O., Wrotek, P. &amp; McGuire, M.</td>
+	<td>Dynamic humanoid balance through inertial control</td>
+	<td>2007</td>
+	<td>IEEE Intl. Conf. on Humanoid Robots (Humanoids 2007)&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../cjenkins_humanoids2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkins2008iroscps" class="entry">
+	<td>Jenkins, O.C.</td>
+	<td>Markov Random Fields Models for Multi-Robot Teams in Cyber-Physical Systems (4 pages)</td>
+	<td>2008</td>
+	<td>International Conference on Intelligent Robots and Systems (IROS 2008), Special Session on Cyber Physical Systems&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../cjenkins_iros2008_cps.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkins2008isr" class="entry">
+	<td>Jenkins, O.C.</td>
+	<td>Sparse Control for High-DOF Assistive Robots</td>
+	<td>2008</td>
+	<td>Intelligent Service Robotics<br/>Vol. 1(2), pp. 123-134&nbsp;</td>
+	<td>article</td>
+	<td><a href="../cjenkins_isr2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkins2006embs" class="entry">
+	<td>Jenkins, O.C.</td>
+	<td>2D Subspaces for Sparse Control of High-DOF Robots</td>
+	<td>2006</td>
+	<td>Intl. Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2006) , pp. 2722-2725&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../cjenkins_embs2006.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkins2005nips" class="entry">
+	<td>Jenkins, O.C.</td>
+	<td>Data-driven Motion Modeling from Kinematic Time-series</td>
+	<td>2005</td>
+	<td>NIPS 2005 Workshop on Activity Recognition and Discovery&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Jenkins2003" class="entry">
+	<td>Jenkins, O.C.</td>
+	<td>Relative Localization from Pairwise Distance Relationships using Kernel PCA</td>
+	<td>2003</td>
+	<td>(CRES-03-010)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="../kpcaloc.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="JenkinsDissertation" class="entry">
+	<td>Jenkins, O.C.</td>
+	<td>Data-driven Derivation of Skills for Autonomous Humanoid Agents</td>
+	<td>2003</td>
+	<td><i>School</i>: The University of Southern California&nbsp;</td>
+	<td>phdthesis</td>
+	<td><a href="../dissertation.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2004nss" class="entry">
+	<td>Jenkins, O.C., Chu, C.-W. &amp; Matari&#263;, M.J.</td>
+	<td>Nonlinear Spherical Shells for Approximate Principal Curve Skeletonization</td>
+	<td>2004</td>
+	<td>(Technical Report, CRES-04-004)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="../cjenkins_nss.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2000" class="entry">
+	<td>Jenkins, O.C., Matari&#263;, M. &amp; Weber, S.</td>
+	<td>Primitive-Based Movement Classification for Humanoid Imitation</td>
+	<td>2000</td>
+	<td>IEEE International Conference on Humanoid Robots (Humanoids 2000)&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../cjenkins_humanoids2000.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2004stisomap" class="entry">
+	<td>Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>A Spatio-temporal Extension to Isomap Nonlinear Dimension Reduction</td>
+	<td>2004</td>
+	<td>(Technical Report, CRES-04-003)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="../cjenkins_stisomap.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="JenkinsMataric2004icml" class="entry">
+	<td>Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>A Spatio-temporal Extension to Isomap Nonlinear Dimension Reduction</td>
+	<td>2004</td>
+	<td>The International Conference on Machine Learning (ICML 2004), pp. 441-448&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../cjenkins_stisomap.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="JenkinsMataric2004ijhr" class="entry">
+	<td>Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>Performance-Derived Behavior Vocabularies: Data-driven Acqusition of Skills from Motion</td>
+	<td>2004</td>
+	<td>International Journal of Humanoid Robotics<br/>Vol. 1(2), pp. 237-288&nbsp;</td>
+	<td>article</td>
+	<td><a href="../cjenkins_ijhr2004.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="JenkinsMataric2003" class="entry">
+	<td>Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>Automated Derivation of Behavior Vocabularies for Autonomous Humanoid Motion</td>
+	<td>2003</td>
+	<td>Autonomous Agents and Multiagent Systems (AAMAS 2003), pp. 225-232&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../agents2003.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="JenkinsMataric2002" class="entry">
+	<td>Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>Deriving Action and Behavior Primitives from Human Motion Data</td>
+	<td>2002</td>
+	<td><br/>Vol. 3IEEE Intelligent Robots and Systems (IROS 2002), pp. 2551-2556&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../iros2002_cjenkins.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="JenkinsMataric2002tr002" class="entry">
+	<td>Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>Modularization of Human Motion into Actions and Behaviors</td>
+	<td>2002</td>
+	<td>(CRES-02-002)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="../motmod_cjenkins.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="JenkinsMataric2001aaai" class="entry">
+	<td>Jenkins, O.C. &amp; Matari&#263;, M.J.</td>
+	<td>Primitives and Behavior-Based Architectures for Interactive Entertainment</td>
+	<td>2001</td>
+	<td>AAAI Spring Symposium on AI and Interactive Entertainment&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aaaiss01.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2000tr385" class="entry">
+	<td>Jenkins, O.C., Matari&#263;, M.J. &amp; Weber, S.</td>
+	<td>Primitive-Based Movement Classification for Humanoid Imitation</td>
+	<td>2000</td>
+	<td>(IRIS-00-385)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="../cjenkins_humanoids2000.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Jenkinsetal2004aaai" class="entry">
+	<td>Jenkins, O.C., Nicolescu, M.N. &amp; Matari&#263;, M.J.</td>
+	<td>Autonomy and Supervision for Robot Skills and Tasks Learned from Demonstration</td>
+	<td>2004</td>
+	<td>AAAI-04 Workshop on Supervisory Control of Learning and Adaptive Systems&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aaai-sc-camera.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="JenkinsSwepson2005sca" class="entry">
+	<td>Jenkins, O.C. &amp; Swepson, C.I.</td>
+	<td>Keyframing by Segmentation of Kinematic Motion</td>
+	<td>2005</td>
+	<td>ACM Symposium on Computer Animation Posters (SCA 2005)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Katzourinetal2006" class="entry">
+	<td>Katzourin, M., Ignatoff, D., Quirk, L., LaViola, J.J. &amp; Jenkins, O.C.</td>
+	<td>Swordplay: Innovating Game Development through VR</td>
+	<td>2006</td>
+	<td>IEEE Comput. Graph. Appl.<br/>Vol. 26(6), pp. 15-19&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://dx.doi.org/10.1109/MCG.2006.137">DOI</a> <a href="http://doi.ieeecomputersociety.org/10.1109/MCG.2006.137">URL</a>&nbsp;</td>
+</tr>
+<tr id="Kimetal2006" class="entry">
+	<td>Kim, S.-.P., Simeral, J., Jenkins, O., Donoghue, J. &amp; Black, M.</td>
+	<td>Finding directional movement representations in motor cortical neural populations using nonlinear manifold learning</td>
+	<td>2006</td>
+	<td>World Congress on Medical Physics and Biomedical Engineering 2006&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="http://www.cs.brown.edu/people/spkim/publication/wc2006.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Kimetal2009aimag" class="entry">
+	<td>Kim, Y., Oh, P. &amp; Jenkins, O.</td>
+	<td>The AAAI 2008 Robotics and Creativity Workshop</td>
+	<td>2009</td>
+	<td>AI Magazine<br/>Vol. 30(1), pp. 103-107&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.aaai.org/ojs/index.php/aimagazine/article/view/2218">URL</a>&nbsp;</td>
+</tr>
+<tr id="Koenigetal2008aaai" class="entry">
+	<td>Koenig, N., Chernova, S., Jones, C., Loper, M. &amp; Jenkins, O.</td>
+	<td>Hands-Free Human-Robot Interaction</td>
+	<td>2008</td>
+	<td>AAAI 2008 Video Program&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Koenigetal2008hri" class="entry">
+	<td>Koenig, N., Chernova, S., Jones, C., Loper, M. &amp; Jenkins, O.</td>
+	<td>Hands-Free Human-Robot Interaction</td>
+	<td>2008</td>
+	<td>HRI 2008 Video Program&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Koenigetal2008icra" class="entry">
+	<td>Koenig, N., Chernova, S., Jones, C., Loper, M. &amp; Jenkins, O.</td>
+	<td>Hands-Free Interaction for Human-Robot Teams</td>
+	<td>2008</td>
+	<td>ICRA 2008 Workshop on Social interaction with intelligent indoor robots&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Kostandovetal2007siggraph" class="entry">
+	<td>Kostandov, M., Schwertfeger, J., Jenkins, O., Jianu, R., Buller, M., Hartmann, D., Loper, M., Tsoli, A., Vondrak, M. &amp; Zhou, W.</td>
+	<td>Robot Gaming and Learning using Augmented Reality</td>
+	<td>2007</td>
+	<td>ACM SIGGRAPH Technical Posters&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../Kostandov-2007-RGL.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="LappingCarretal2008aaai" class="entry">
+	<td>Lapping-Carr, M., Jenkins, O., Grollman, D., Schwertfeger, J. &amp; Hinkle, T.</td>
+	<td>Wiimote Interfaces for Lifelong Robot Learning</td>
+	<td>2008</td>
+	<td>AAAI Symposium on Using AI to Motivate Greater Participation in Computer Science&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../SS08LappingCarrM_aaai2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Lelandetal2006robocup" class="entry">
+	<td>Leland, E., Jenkins, O., Dickinson, B., Grollman, D. &amp; Moseley, M.</td>
+	<td>The Brown University Robocup 2006 Four-Legged League Team Report</td>
+	<td>2006</td>
+	<td>&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="http://www.cs.brown.edu/research/pubs/theses/masters/2006/eleland.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Lelandetal2005" class="entry">
+	<td>Leland, E., Jenkins, O.C. &amp; Bradford, K.</td>
+	<td>Robosapien Localization and Control</td>
+	<td>2006</td>
+	<td>Circuit Cellar Magazine<br/>Vol. 188&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.circuitcellar.com/library/print/0306/Leland-188/Leland-188.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Loperetal2009hri" class="entry">
+	<td>Loper, M., Koenig, N., Chernova, S., Jenkins, O. &amp; Jones, C.</td>
+	<td>Mobile Human-Robot Teaming with Environmental Tolerance</td>
+	<td>2009</td>
+	<td>Human-Robot Interaction (HRI 2009), pp. 157-164&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../matt_hri2009.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="LoperJenkins2005" class="entry">
+	<td>Loper, M.M. &amp; Jenkins, O.C.</td>
+	<td>Real-time Silhouette Intersection by Maintaining the Distribution of Occupancy</td>
+	<td>2005</td>
+	<td>(Technical Report, cs05-12)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="http://www.cs.brown.edu/publications/techreports/reports/CS-05-12.html">URL</a>&nbsp;</td>
+</tr>
+<tr id="Malliosetal2005" class="entry">
+	<td>Mallios, J., Mehta, N., Street, C. &amp; Jenkins, O.C.</td>
+	<td>Modular Dynamic Response from Motion Databases</td>
+	<td>2005</td>
+	<td>SIGGRAPH 2005 Posters&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../siggraph_modularresponse.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Mataricetal2000aaai" class="entry">
+	<td>Matari&#263;, M.J., Jenkins, O.C., Fod, A. &amp; Zordan, V.B.</td>
+	<td>Control and Imitation in Humanoids</td>
+	<td>2000</td>
+	<td>AAAI Fall Symposium on Simulating Human Agents&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aaaifs00-hum.ps.gz">URL</a>&nbsp;</td>
+</tr>
+<tr id="McGuireJenkins2008" class="entry">
+	<td>McGuire, M. &amp; Jenkins, O.</td>
+	<td>Creating Games: Mechanics, Content, and Technology</td>
+	<td>2009</td>
+	<td>&nbsp;</td>
+	<td>book</td>
+	<td><a href="http://www.akpeters.com/product.asp?ProdCode=3058">URL</a>&nbsp;</td>
+</tr>
+<tr id="Milleretal2004" class="entry">
+	<td>Miller, N., Jenkins, O.C., Kallmann, M. &amp; Matari&#263;, M.J.</td>
+	<td>Motion Capture from Inertial Sensing for Untethered Humanoid Teleoperation</td>
+	<td>2004</td>
+	<td>(Technical Report, CRES-04-010)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="../humanoids2004-imu.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Milleretal2004humanoids" class="entry">
+	<td>Miller, N., Jenkins, O.C., Kallmann, M. &amp; Matari&#263;, M.J.</td>
+	<td>Motion Capture from Inertial Sensing for Untethered Humanoid Teleoperation</td>
+	<td>2004</td>
+	<td>IEEE International Conference on Humanoid Robots (Humanoids 2004), pp. 547-565&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../humanoids2004-imu.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Nicolescuetal2006roman" class="entry">
+	<td>Nicolescu, M., Jenkins, O. &amp; Olenderski, A.</td>
+	<td>Learning Behavior Fusion Estimation from Demonstration</td>
+	<td>2006</td>
+	<td>IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN 2006)&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../roman06.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Nicolescuetal2007is" class="entry">
+	<td>Nicolescu, M., Jenkins, O., Olenderski, A. &amp; Fritzinger, E.</td>
+	<td>Learning Behavior Fusion from Demonstration</td>
+	<td>2008</td>
+	<td>Interaction Studies<br/>Vol. 9(2), pp. 319-352&nbsp;</td>
+	<td>article</td>
+	<td><a href="http://www.cse.unr.edu/~monica/Research/Publications/is2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Nicolescuetal2007icdl" class="entry">
+	<td>Nicolescu, M., Jenkins, O. &amp; Stanhope, A.</td>
+	<td>Fusing Robot Behaviors for Human-Level Tasks</td>
+	<td>2007</td>
+	<td>International Conference on Development and Learning (ICDL 2007), pp. 76-81&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../monica_icdl2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Nicolescuetal2006dis" class="entry">
+	<td>Nicolescu, M., Jenkins, O.C. &amp; Olenderski, A.</td>
+	<td>Behavior Fusion Estimation for Robot Learning from Demonstration</td>
+	<td>2006</td>
+	<td>IEEE Workshop on Distributed Intelligent Systems (DIS'06), pp. 31-36&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../dis06.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Osentoskietal2010aaawrkshp" class="entry">
+	<td>Osentoski, S., Jay, G., Crick, C. &amp; Jenkins, O.</td>
+	<td>Brown ROS Package: Reproducibility for Shared Experimentation and Learning from Demonstration</td>
+	<td>2010</td>
+	<td>AAAI-10 Robot Workshop&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Osentoskietal2010nipswrkshp" class="entry">
+	<td>Osentoski, S., Jay, G., Crick, C. &amp; Jenkins, O.</td>
+	<td>Crowdsourcing for closed loop control</td>
+	<td>2010</td>
+	<td>NIPS Workshop on Computational Social Science and the Wisdom of Crowds&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="Osentoskietal2011icra" class="entry">
+	<td>Osentoski, S., Jay, G., Crick, C., Pitzer, B., DuHadway, C. &amp; Jenkins, O.</td>
+	<td>Robots as web services: Reproducible experimentation and application development using rosjs</td>
+	<td>2011</td>
+	<td>International Conference on Robotics and Automation (ICRA 2011)&nbsp;</td>
+	<td>inproceedings</td>
+	<td>&nbsp;</td>
+</tr>
+<tr id="OsentoskiMahadevan2010aamas" class="entry">
+	<td>Osentoski, S. &amp; Mahadevan, S.</td>
+	<td>Basis Function Construction for Hierarchical Reinforcement Learning</td>
+	<td>2010</td>
+	<td>Nineth International Conference on Autonmous Agents and Multiagent Systems (AAMAS), pp. in press&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../sosentos_aamas2010.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="PetersJenkins2005humanoids" class="entry">
+	<td>Peters, R.A. &amp; Jenkins, O.C.</td>
+	<td>Uncovering Manifold Structures in Robonaut's Sensory-Data State Space</td>
+	<td>2005</td>
+	<td>IEEE International Conference on Humanoid Robotics (Humanoids 2005), pp. 369-374&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../humanoids2005.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Petersetal2006humanoids" class="entry">
+	<td>Peters, R., Jenkins, O. &amp; Bodenheimer, R.</td>
+	<td>Sensory-Motor Manifold Structure Induced by Task Outcome: Experiments with Robonaut</td>
+	<td>2006</td>
+	<td>IEEE International Conference on Humanoid Robotics (Humanoids 2006), pp. 484-489&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../rap2-humanoids2006.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="SchwertfegerJenkins2007icdl" class="entry">
+	<td>Schwertfeger, J. &amp; Jenkins, O.</td>
+	<td>Multi-Robot Belief Propagation for Distributed Robot Allocation</td>
+	<td>2007</td>
+	<td>International Conference on Development and Learning (ICDL 2007), pp. 193-198&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../js_icdl2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Steinfeldetal2009hri" class="entry">
+	<td>Steinfeld, A., Jenkins, O. &amp; Scassellati, B.</td>
+	<td>The Oz of Wizard: Simulating the Human for Interaction Research</td>
+	<td>2009</td>
+	<td>Human-Robot Interaction (HRI 2009), pp. 101-108&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../steinfeld_hri2009.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="TsoliJenkins2007isrr" class="entry">
+	<td>Tsoli, A. &amp; Jenkins, O.</td>
+	<td>Robot Grasping for Prosthetic Applications</td>
+	<td>2007</td>
+	<td>International Symposium of Robotics Research (ISRR2007)&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aggeliki_isrr2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="TsoliJenkins2007maia" class="entry">
+	<td>Tsoli, A. &amp; Jenkins, O.</td>
+	<td>Cursor-controlled prosthetic grasping from 2D subspaces</td>
+	<td>2007</td>
+	<td>MAIA Workshop ``BCI Meets Robotics'': Challenging Issues in Brain-Computer Interaction and Shared Control&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aggeliki_bci2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="TsoliJenkins2007rss" class="entry">
+	<td>Tsoli, A. &amp; Jenkins, O.</td>
+	<td>2D Subspaces for User-Driven Robot Grasping</td>
+	<td>2007</td>
+	<td>Robotics: Science and Systems - Robot Manipulation: Sensing and Adapting to the Real World&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aggeliki_rss2007.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="TsoliJenkins2008iros" class="entry">
+	<td>Tsoli, A. &amp; Jenkins, O.C.</td>
+	<td>Neighborhood denoising for learning high-dimensional grasping manifolds</td>
+	<td>2008</td>
+	<td>International Conference on Intelligent Robots and Systems (IROS 2008), pp. 3680-3685&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aggeliki_iros2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="TsoliJenkins2008iroswk" class="entry">
+	<td>Tsoli, A. &amp; Jenkins, O.C.</td>
+	<td>Learning 2D Subspaces for User-Controlled Robot Grasping</td>
+	<td>2008</td>
+	<td>International Conference on Intelligent Robots and Systems Workshop on Robot Learning&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aggeliki_iros2008_robotlearning.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Vondraketal2009mc" class="entry">
+	<td>Vondrak, M., Sigal, L. &amp; Jenkins, O.</td>
+	<td>Dynamics and Control of Multibody Systems</td>
+	<td>2010</td>
+	<td>Motion Control, pp. 1-30&nbsp;</td>
+	<td>incollection</td>
+	<td><a href="http://sciyo.com/articles/show/title/dynamics-and-control-of-multibody-systems">URL</a>&nbsp;</td>
+</tr>
+<tr id="Vondraketal2008cvpr" class="entry">
+	<td>Vondrak, M., Sigal, L. &amp; Jenkins, O.</td>
+	<td>Physical Simulation for Probabilistic Motion Tracking</td>
+	<td>2008</td>
+	<td>Computer Vision and Pattern Recognition (CVPR 2008), pp. 1-8&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../marek_cvpr2008.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Weberetal2000" class="entry">
+	<td>Weber, S., Matari&#263;, M. &amp; Jenkins, O.</td>
+	<td>Imitation Using Perceptuo-Motor Primitives</td>
+	<td>2000</td>
+	<td>Autonomous Agents, pp. 136-137&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="../aa00-wstefan.ps.gz">URL</a>&nbsp;</td>
+</tr>
+<tr id="Grollmanetal2008tr" class="entry">
+	<td>Wood, F., Grollman, D.H., Heller, K.A., Jenkins, O.C. &amp; Black, M.</td>
+	<td>Incremental Nonparametric Bayesian Regression</td>
+	<td>2008</td>
+	<td>(CS-08-07)&nbsp;</td>
+	<td>techreport</td>
+	<td><a href="http://www.cs.brown.edu/publications/techreports/reports/CS-08-07.html">URL</a>&nbsp;</td>
+</tr>
+<tr id="Wroteketal2006sandbox" class="entry">
+	<td>Wrotek, P., Jenkins, O. &amp; McGuire, M.</td>
+	<td>Dynamo: Dynamic Data-driven Character Control with Adjustable Balance</td>
+	<td>2006</td>
+	<td>ACM SIGGRAPH Video Game Symposium&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="http://graphics.cs.brown.edu/games/Dynamo/Sandbox06/dynamo.pdf">URL</a>&nbsp;</td>
+</tr>
+<tr id="Wroteketal2006siggraph" class="entry">
+	<td>Wrotek, P., Jenkins, O. &amp; McGuire, M.</td>
+	<td>World Space Servoing for Character Animation under Simulation</td>
+	<td>2006</td>
+	<td>ACM SIGGRAPH Technical Sketches&nbsp;</td>
+	<td>inproceedings</td>
+	<td><a href="http://graphics.cs.brown.edu/games/Dynamo/SIGGRAPH06/sig06-world-space-sketch.pdf">URL</a>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+ <small>Created by <a href="http://jabref.sourceforge.net">JabRef</a> on 14/03/2011.</small>
+</p>
+
+</body>
+</html>
+
+<!-- File generated by JabRef; Export Filter written by Mark Schenk -->

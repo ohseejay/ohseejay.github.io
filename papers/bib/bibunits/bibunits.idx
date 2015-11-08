@@ -1,0 +1,10 @@
+\indexentry{bibunit={\ttfamily bibunit} (environment)|usage}{2}
+\indexentry{environments:>{\ttfamily bibunit}|usage}{2}
+\indexentry{bibliographyunit=\verb!*+\bibliographyunit+|usage}{2}
+\indexentry{cite*=\verb!*+\cite*+|usage}{2}
+\indexentry{nocite*=\verb!*+\nocite*+|usage}{2}
+\indexentry{putbib=\verb!*+\putbib+|usage}{2}
+\indexentry{bibliography=\verb!*+\bibliography+|usage}{3}
+\indexentry{bibliographystyle=\verb!*+\bibliographystyle+|usage}{3}
+\indexentry{bibliography*=\verb!*+\bibliography*+|usage}{3}
+\indexentry{bibliographystyle*=\verb!*+\bibliographystyle*+|usage}{3}

@@ -1,0 +1,3706 @@
+<?xml version="1.0" ?>
+<bibtex:file xmlns:bibtex="http://bibtexml.sf.net/">
+<!-- This file was exported from JabRef jabref.sf.net -->
+<!-- 2006-01-17 added DOI XML character formatting, because DOI can contain &lt; and &gt; -->
+
+<bibtex:entry id="Andersonetal2009aimag">
+  <bibtex:article>
+    <bibtex:author>Anderson&#44; M. and Jenkins&#44; O. and Oh&#44; P.</bibtex:author>
+
+    <bibtex:title>The 17th Annual AAAI Robot Exhibition and Manipulation and Mobility Workshop</bibtex:title>
+
+    <bibtex:journal>AI Magazine</bibtex:journal>
+
+    <bibtex:year>2009</bibtex:year>
+    <bibtex:volume>30</bibtex:volume>
+
+
+    <bibtex:pages>95-102</bibtex:pages>
+    <bibtex:number>1</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>http://www.aaai.org/ojs/index.php/aimagazine/article/view/2208</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="BergCrossCrick2010permis">
+  <bibtex:inproceedings>
+    <bibtex:author>Gary Berg&#45;Cross and Christopher Crick</bibtex:author>
+
+    <bibtex:title>Intentions and intention recognition in intelligent agents</bibtex:title>
+    <bibtex:booktitle>Performance Metrics for Intelligent Systems (PerMIS) Workshop</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Bluethmannetal2004humanoids">
+  <bibtex:inproceedings>
+    <bibtex:author>William Bluethmann and Robert Ambrose and Myron Diftler and Eric Huber and Andy Fagg and Michael Rosenstein and Robert Platt and Roderic Grupen and Cynthia Breazeal and Andrew Brooks and Andrea Lockerd and Richard Alan Peters and Odest Chadwicke Jenkins and Maja J Matari\&#39;c and Magdalena Bugajska</bibtex:author>
+
+    <bibtex:title>Building an Autonomous Humanoid Tool User</bibtex:title>
+    <bibtex:booktitle>IEEE International Conference on Humanoid Robots (Humanoids 2004)</bibtex:booktitle>
+
+
+    <bibtex:year>2004</bibtex:year>
+
+    <bibtex:month>Nov</bibtex:month>
+
+    <bibtex:pages>402-421</bibtex:pages>
+
+
+
+
+
+
+
+
+
+    <bibtex:url>http://cres.usc.edu/cgi&#45;bin/print&#95;pub&#95;details.pl&#63;pubid=424</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Bulleretal2010iaai">
+  <bibtex:inproceedings>
+    <bibtex:author>M. Buller and W. Tharion and R. Hoyt and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Estimation of Human Internal Temperature from Wearable Physiological Sensors</bibtex:title>
+    <bibtex:booktitle>Innovative Applications in Artificial Intelligence</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:address>Atlanta&#44; GA</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Bulleretal2010spie">
+  <bibtex:inproceedings>
+    <bibtex:author>M. Buller and A. Welles and O.Jenkins and R. Hoyt</bibtex:author>
+
+    <bibtex:title>Extreme health sensing: the challenges&#44; technologies&#44; and strategies for active health sustainment of military personnel during training and combat missions</bibtex:title>
+    <bibtex:booktitle>SPIE Sensors&#44; and Command&#44; Control&#44; Communications&#44; and Intelligence (C3I) Technologies for Homeland Security and Homeland Defense IX (Conference 7666)</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:address>Orlando&#44; FL</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Butterfieldetal2008wmcnr">
+  <bibtex:inproceedings>
+    <bibtex:author>J. Butterfield and K. Dantu and B. Gerkey and O. Jenkins and G. Sukhatme</bibtex:author>
+
+    <bibtex:title>Autonomous Biconnected Networks of Mobile Robots</bibtex:title>
+    <bibtex:booktitle> Wireless Multihop Communications in Networked Robotics</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>April</bibtex:month>
+
+    <bibtex:pages>640-646</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Berlin&#44; Germany</bibtex:address>
+
+
+    <bibtex:url>jbutterf&#95;wmcnr2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Butterfieldetal2008aamas">
+  <bibtex:inproceedings>
+    <bibtex:author>J. Butterfield and B.P. Gerkey and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>Multi&#45;robot Markov Random Fields</bibtex:title>
+    <bibtex:booktitle>Autonomous Agents and Multi Agent Systems (AAMAS 2008)</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>May</bibtex:month>
+
+    <bibtex:pages>1211-1214</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Estoril&#44; Portugal</bibtex:address>
+
+
+    <bibtex:url>jbutterf&#95;aamas2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Butterfieldetal2008ijsr">
+  <bibtex:article>
+    <bibtex:author>J. Butterfield and O. C. Jenkins and D. Sobel and J. Schwertfeger</bibtex:author>
+
+    <bibtex:title>Modeling Aspects of Theory of Mind with Markov Random Fields</bibtex:title>
+
+    <bibtex:journal>International Journal of Social Robotics</bibtex:journal>
+
+    <bibtex:year>2009</bibtex:year>
+    <bibtex:volume>1</bibtex:volume>
+    <bibtex:month>Jan</bibtex:month>
+
+    <bibtex:pages>41-51</bibtex:pages>
+    <bibtex:number>1</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>jbutterf&#95;ijsr2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Butterfieldetal2010humanoids">
+  <bibtex:inproceedings>
+    <bibtex:author>J. Butterfield and S. Osentoski and G. Jay and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Learning from Demonstration using a Multi&#45;valued Function Regressor for Time&#45;series Data</bibtex:title>
+    <bibtex:booktitle>IEEE&#45;RAS International Conference on Humanoid Robots (Humanoids 2010)</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+
+
+    <bibtex:pages>328&#x2013;333</bibtex:pages>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Byersetal2008aaai">
+  <bibtex:inproceedings>
+    <bibtex:author>D. Byers and M. Lapping&#45;Carr and J. Kumar and T. Hinkle and D. Grollman and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Game&#45;based Robot Learning</bibtex:title>
+    <bibtex:booktitle>AAAI 2008 Video Program (Best Student Video)</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Chicago&#44; IL&#44; USA</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Byersetal2008hri">
+  <bibtex:inproceedings>
+    <bibtex:author>D. Byers and M. Lapping&#45;Carr and J. Kumar and T. Hinkle and D. Grollman and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Brown Robotics: Game&#45;based Learning</bibtex:title>
+    <bibtex:booktitle>HRI 2008 Video Program</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Mar</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Amsterdam&#44; Netherlands</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="ChangJenkins2006sca">
+  <bibtex:inproceedings>
+    <bibtex:author>E. Chang and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Sketching Articulation and Pose for Facial Animation</bibtex:title>
+    <bibtex:booktitle>ACM SIGGRAPH/Eurographics Symposium on Computer Animation (SCA 2006)</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Sep</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Vienna&#44; Austria</bibtex:address>
+
+
+    <bibtex:url>sca&#95;final.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="ChangJenkins2007facialbook">
+  <bibtex:incollection>
+    <bibtex:author>Edwin Chang and Odest Chadwicke Jenkins</bibtex:author>
+    <bibtex:editor>Zhigang Deng and Ulrich Neumann</bibtex:editor>
+    <bibtex:title>Sketching Articulation and Pose for Facial Animation</bibtex:title>
+    <bibtex:booktitle>Data&#45;Driven 3D Facial Animation</bibtex:booktitle>
+
+    <bibtex:publisher>Springer</bibtex:publisher>
+    <bibtex:year>2007</bibtex:year>
+
+
+    <bibtex:chapter>8</bibtex:chapter>
+    <bibtex:pages>132-144</bibtex:pages>
+
+
+
+
+
+
+
+
+
+    <bibtex:url>http://www.springer.com/978&#45;1&#45;84628&#45;906&#45;4</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:incollection>
+</bibtex:entry>
+<bibtex:entry id="Chuetal2003">
+  <bibtex:inproceedings>
+    <bibtex:author>Chi&#45;Wei Chu and Odest Chadwicke Jenkins and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Markerless Kinematic Model and Motion Capture from Volume Sequences</bibtex:title>
+    <bibtex:booktitle>IEEE Computer Vision and Pattern Recognition (CVPR 2003)</bibtex:booktitle>
+
+
+    <bibtex:year>2003</bibtex:year>
+
+    <bibtex:month>Jun</bibtex:month>
+
+    <bibtex:pages>II: 475-482</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Madison&#44; Wisconsin&#44; USA</bibtex:address>
+
+
+    <bibtex:url>cvpr2003.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Chuetal2002">
+  <bibtex:techreport>
+    <bibtex:author>Chi&#45;Wei Chu and Odest Chadwicke Jenkins and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Converting Sequences of Human Volumes into Kinematic Motion</bibtex:title>
+
+
+
+    <bibtex:year>2002</bibtex:year>
+
+    <bibtex:month>Sep</bibtex:month>
+
+
+    <bibtex:number>CRES&#45;02&#45;003</bibtex:number>
+
+
+    <bibtex:institution>Center for Robotics and Embedded Systems&#44; University of Southern California</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>volcap.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="Cricketal2011hri">
+  <bibtex:inproceedings>
+    <bibtex:author>C. Crick and S. Osentoski and G. Jay and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Human and robot perception in large&#45;scale learning from demonstration</bibtex:title>
+    <bibtex:booktitle>ACM/IEEE International Conference on Human&#45;Robot Interaction (HRI 2011)</bibtex:booktitle>
+
+
+    <bibtex:year>2011</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Dickinsonetal2007aaai">
+  <bibtex:inproceedings>
+    <bibtex:author>B. Dickinson and O.C. Jenkins and M. Moseley and D. Bloom and D. Hartmann</bibtex:author>
+
+    <bibtex:title>Roomba Pac&#45;Man: Teaching Autonomous Robotics through Embodied Gaming</bibtex:title>
+    <bibtex:booktitle>AAAI Symposium on Robot and Robot Venues: Resources for AI Education</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Mar</bibtex:month>
+
+    <bibtex:pages>35-39</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Palo Alto&#44; CA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>bcd&#95;aaai07.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Drumwrightetal2004icra">
+  <bibtex:inproceedings>
+    <bibtex:author>Evan Drumwright and Odest C. Jenkins and Maja J. Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Exemplar&#45;Based Primitives for Humanoid Movement Classification and Control</bibtex:title>
+    <bibtex:booktitle>IEEE International Conference on Robotics and Automation</bibtex:booktitle>
+
+
+    <bibtex:year>2004</bibtex:year>
+
+    <bibtex:month>Apr</bibtex:month>
+
+    <bibtex:pages>140-145</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>New Orleans&#44; LA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>http://cres.usc.edu/cgi&#45;bin/print&#95;pub&#95;details.pl&#63;pubid=356</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Eroletal2003">
+  <bibtex:inproceedings>
+    <bibtex:author>D. Erol and J. Park and E. Turkay and K. Kawamura and O. Jenkins and M. Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Motion Generation for Humanoid Robots with Automatically Derived Behaviors</bibtex:title>
+    <bibtex:booktitle>IEEE Systems&#44; Man&#44; and Cybernetics (SMC 2003)</bibtex:booktitle>
+
+
+    <bibtex:year>2003</bibtex:year>
+
+    <bibtex:month>Oct</bibtex:month>
+
+    <bibtex:pages>1816-1822</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Washington&#44; DC&#44; USA</bibtex:address>
+
+
+    <bibtex:url>smc2003.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Fodetal2002">
+  <bibtex:article>
+    <bibtex:author>A. Fod and M. Matari\&#39;c and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Automated Derivation of Primitives for Movement Classification</bibtex:title>
+
+    <bibtex:journal>Autonomous Robots</bibtex:journal>
+
+    <bibtex:year>2002</bibtex:year>
+    <bibtex:volume>12</bibtex:volume>
+    <bibtex:month>Jan</bibtex:month>
+
+    <bibtex:pages>39&#x2013;54</bibtex:pages>
+    <bibtex:number>1</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>http://www&#45;robotics.usc.edu/&#126;cjenkins/papers/ar2002&#95;fod.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Fodetal2000">
+  <bibtex:inproceedings>
+    <bibtex:author>A. Fod and M. Matari\&#39;c and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Automated Derivation of Primitives for Movement Classification</bibtex:title>
+    <bibtex:booktitle>IEEE&#45;RAS International Conference on Humanoid Robots (Humanoids 2000)</bibtex:booktitle>
+
+
+    <bibtex:year>2000</bibtex:year>
+
+    <bibtex:month>Oct</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Cambridge&#44; MA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>21j.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins2007icdl">
+  <bibtex:inproceedings>
+    <bibtex:author>D.H. Grollman and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>Learning Elements of Robot Soccer from Demonstration</bibtex:title>
+    <bibtex:booktitle>International Conference on Development and Learning (ICDL 2007)</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+    <bibtex:pages>276-281</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>London&#44; England</bibtex:address>
+
+
+    <bibtex:url>dang&#95;ICDL&#95;2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins2007icra">
+  <bibtex:inproceedings>
+    <bibtex:author>D.H. Grollman and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>Dogged Learning for Robots</bibtex:title>
+    <bibtex:booktitle>International Conference on Robotics and Automation (ICRA 2007)</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Apr</bibtex:month>
+
+    <bibtex:pages>2483-2488</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Rome&#44; Italy</bibtex:address>
+
+
+    <bibtex:url>dang&#95;ICRA&#95;2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins2008iroswk">
+  <bibtex:inproceedings>
+    <bibtex:author>D.H. Grollman and O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>Learning multi&#45;objective robot control policies from demonstration</bibtex:title>
+    <bibtex:booktitle>International Conference on Intelligent Robots and Systems Workshop on Robot Learning</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Sep</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Nice&#44; France</bibtex:address>
+
+
+    <bibtex:url>dang&#95;iros2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="GrollmanDissertation">
+  <bibtex:phdthesis>
+    <bibtex:author>Daniel H Grollman</bibtex:author>
+
+    <bibtex:title>Teaching Old Dogs New Tricks: Incremental Multimap Regression for Interactive Robot Learning from Demonstration</bibtex:title>
+
+
+
+    <bibtex:year>2010</bibtex:year>
+
+    <bibtex:month>May</bibtex:month>
+
+
+
+
+
+
+
+    <bibtex:school>Brown University</bibtex:school>
+
+
+
+    <bibtex:url>dang&#95;dissertation.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:phdthesis>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins2010iros">
+  <bibtex:inproceedings>
+    <bibtex:author>Daniel H Grollman and Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>Incremental Learning of Subtasks from Unsegmented Demonstration</bibtex:title>
+    <bibtex:booktitle>International Conference on Intelligent Robots and Systems (IROS 2010)</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+    <bibtex:month>Oct</bibtex:month>
+
+    <bibtex:pages>261&#x2013;266</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Taipei&#44; Taiwan</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins_2009fmilr">
+  <bibtex:incollection>
+    <bibtex:author>Daniel H Grollman and Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>Can We Learn Finite State Machine Robot Controllers from Interactive Demonstration&#63;</bibtex:title>
+    <bibtex:booktitle>From Motor to Interaction Learning in Robots</bibtex:booktitle>
+
+    <bibtex:publisher>Springer</bibtex:publisher>
+    <bibtex:year>2009</bibtex:year>
+
+
+
+    <bibtex:pages>405&#x2013;429</bibtex:pages>
+
+
+
+
+
+
+
+
+
+    <bibtex:url>dang&#95;fmilr2009.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:incollection>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins_2009rss">
+  <bibtex:inproceedings>
+    <bibtex:author>Daniel H Grollman and Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>Multimap Regression for Perceptual Aliasing in Learning Finite State Machine Robot Controllers from Interactive Demonstration</bibtex:title>
+    <bibtex:booktitle>Robotics: Science and Systems Workshop on Regression in Robotics</bibtex:booktitle>
+
+
+    <bibtex:year>2009</bibtex:year>
+
+    <bibtex:month>June</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Seattle&#44; Washington&#44; USA</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins2008icra">
+  <bibtex:inproceedings>
+    <bibtex:author>D. H. Grollman and O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>Sparse Incremental Learning for Interactive Robot Control Policy Estimation</bibtex:title>
+    <bibtex:booktitle>International Conference on Robotics and Automation (ICRA 2008)</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>May</bibtex:month>
+
+    <bibtex:pages>3315-3320</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Pasadena&#44; CA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>dang&#95;icra2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins2007nips">
+  <bibtex:inproceedings>
+    <bibtex:author>D. H. Grollman and O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>(Machine) Learning Robot Control Policies</bibtex:title>
+    <bibtex:booktitle>NIPS 2007 Workshop on Robotics challenges for Machine Learning </bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Dec</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Whistler&#44; BC&#44; Canada</bibtex:address>
+
+
+    <bibtex:url>GrollmanJenkins&#95;NIPS2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="GrollmanJenkins2007rss">
+  <bibtex:inproceedings>
+    <bibtex:author>Daniel H Grollman and Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>Learning Robot Soccer from Demonstration: Ball Grasping</bibtex:title>
+    <bibtex:booktitle>Robotics: Science and Systems &#45; Robot Manipulation: Sensing and Adapting to the Real World</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Jun</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>dang&#95;RSS&#95;2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Grollmanetal2006jfr">
+  <bibtex:article>
+    <bibtex:author>D. H. Grollman and O. C. Jenkins and F. Wood</bibtex:author>
+
+    <bibtex:title>Discovering Natural Kinds of Robot Sensory Experiences in Unstructured Environments</bibtex:title>
+
+    <bibtex:journal>Journal of Field Robotics</bibtex:journal>
+
+    <bibtex:year>2006</bibtex:year>
+    <bibtex:volume>23</bibtex:volume>
+
+
+    <bibtex:pages>1077-1089</bibtex:pages>
+    <bibtex:number>11&#45;12</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>JFR&#95;2006&#95;dang.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Grollmanetal2005">
+  <bibtex:techreport>
+    <bibtex:author>D. H. Grollman and O. C. Jenkins and F. Wood</bibtex:author>
+
+    <bibtex:title>Extensible Data&#45;driven Classification of Robot Sensor Data</bibtex:title>
+
+
+
+    <bibtex:year>2005</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+
+    <bibtex:number>Technical Report&#44; cs05&#45;11</bibtex:number>
+
+
+    <bibtex:institution>Brown Computer Science Department</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>http://www.cs.brown.edu/publications/techreports/reports/CS&#45;05&#45;11.html</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="Grollmanetal2005nips">
+  <bibtex:inproceedings>
+    <bibtex:author>D. H. Grollman and O. C. Jenkins and F. Wood</bibtex:author>
+
+    <bibtex:title>Discovering Natural Kinds of Robot Sensory Experiences in Unstructured Environments</bibtex:title>
+    <bibtex:booktitle>NIPS 2005 Workshop on Machine Learning Based Robotics in Unstructured Environments</bibtex:booktitle>
+
+
+    <bibtex:year>2005</bibtex:year>
+
+    <bibtex:month>Dec</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Whistler&#44; BC&#44; Canada</bibtex:address>
+
+
+    <bibtex:url>nips&#95;mlrobotics.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2006icdl">
+  <bibtex:inproceedings>
+    <bibtex:author>O. Jenkins and R. Bodenheimer and R. Peters</bibtex:author>
+
+    <bibtex:title>Manipulation Manifolds: Explorations into Uncovering Manifolds in Sensory&#45;motor Spaces (8 pages)</bibtex:title>
+    <bibtex:booktitle>International Conference on Development and Learning (ICDL 2006)</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>May&#45;Jun</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Bloomington&#44; IN&#44; USA</bibtex:address>
+
+
+    <bibtex:url>icdl&#95;cjenkins.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2007hri">
+  <bibtex:inproceedings>
+    <bibtex:author>O.C. Jenkins and G. Gonz\&#39;alez and M.M. Loper</bibtex:author>
+
+    <bibtex:title>Tracking Human Motion and Actions for Interactive Robots</bibtex:title>
+    <bibtex:booktitle>Human&#45;Robot Interaction (HRI 2007)</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Mar</bibtex:month>
+
+    <bibtex:pages>365-372</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Arlington&#44; VA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>hri212&#45;jenkins.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2007hribook">
+  <bibtex:incollection>
+    <bibtex:author>O.C. Jenkins and G. Gonz\&#39;alez and M.M. Loper</bibtex:author>
+
+    <bibtex:title>Recognizing Human Pose and Actions for Interactive Robots</bibtex:title>
+    <bibtex:booktitle>Human&#45;Robot Interaction</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+
+    <bibtex:chapter>6</bibtex:chapter>
+    <bibtex:pages>119-138</bibtex:pages>
+
+
+
+
+
+
+
+
+
+    <bibtex:url>http://www.intechweb.org/book.php&#63;id=20&#38;&#35;x0026;content=title&#38;&#35;x0026;sid=1&#38;&#35;x0026;PHPSESSID=mopvuqnussavp3potanvu5slq6</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:incollection>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2006aaai">
+  <bibtex:inproceedings>
+    <bibtex:author>O.C. Jenkins and G. Gonz\&#39;alez and M.M. Loper</bibtex:author>
+
+    <bibtex:title>Monocular Virtual Trajectory Estimation with Dynamical Primitives</bibtex:title>
+    <bibtex:booktitle>AAAI 2006 Cognitive Robotics Workshop</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Boston&#44; MA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>cogrob&#95;cjenkins.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2006cvpr">
+  <bibtex:inproceedings>
+    <bibtex:author>O.C. Jenkins and G. Gonz\&#39;alez and M.M. Loper</bibtex:author>
+
+    <bibtex:title>Learning Dynamical Motion Vocabularies for Kinematic Tracking and Activity Recognition</bibtex:title>
+    <bibtex:booktitle>CVPR 2006 Workshop on Vision for Human&#45;Computer Interaction</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Jun</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>New York&#44; NY&#44; USA</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2007ijhr">
+  <bibtex:article>
+    <bibtex:author>O.C. Jenkins and G. Gonzalez and M.M. Loper</bibtex:author>
+
+    <bibtex:title>Interactive Human Pose and Action Recognition using Dynamical Motion Primitives</bibtex:title>
+
+    <bibtex:journal>International Journal of Humanoid Robotics</bibtex:journal>
+
+    <bibtex:year>2007</bibtex:year>
+    <bibtex:volume>4</bibtex:volume>
+    <bibtex:month>Jun</bibtex:month>
+
+    <bibtex:pages>365&#x2013;385</bibtex:pages>
+    <bibtex:number>2</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>cjenkins&#95;ijhr2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2006rss">
+  <bibtex:inproceedings>
+    <bibtex:author>O.C. Jenkins and R.A. Peters and R.E. Bodenheimer</bibtex:author>
+
+    <bibtex:title>Uncovering Success in Manipulation</bibtex:title>
+    <bibtex:booktitle>Robotics: Science and Systems Workshop on Manipulation in Human Environments</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Aug</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Philadelphia&#44; PA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>rss06manip.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2007humanoids">
+  <bibtex:inproceedings>
+    <bibtex:author>O.C. Jenkins and P. Wrotek and M. McGuire</bibtex:author>
+
+    <bibtex:title>Dynamic humanoid balance through inertial control</bibtex:title>
+    <bibtex:booktitle>IEEE Intl. Conf. on Humanoid Robots (Humanoids 2007)</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>cjenkins&#95;humanoids2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkins2008iroscps">
+  <bibtex:inproceedings>
+    <bibtex:author>O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>Markov Random Fields Models for Multi&#45;Robot Teams in Cyber&#45;Physical Systems (4 pages)</bibtex:title>
+    <bibtex:booktitle>International Conference on Intelligent Robots and Systems (IROS 2008)&#44; Special Session on Cyber Physical Systems</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Sep</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Nice&#44; France</bibtex:address>
+
+
+    <bibtex:url>cjenkins&#95;iros2008&#95;cps.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkins2008isr">
+  <bibtex:article>
+    <bibtex:author>Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>Sparse Control for High&#45;DOF Assistive Robots</bibtex:title>
+
+    <bibtex:journal>Intelligent Service Robotics</bibtex:journal>
+
+    <bibtex:year>2008</bibtex:year>
+    <bibtex:volume>1</bibtex:volume>
+    <bibtex:month>Apr</bibtex:month>
+
+    <bibtex:pages>123-134</bibtex:pages>
+    <bibtex:number>2</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>cjenkins&#95;isr2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Jenkins2006embs">
+  <bibtex:inproceedings>
+    <bibtex:author>Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>2D Subspaces for Sparse Control of High&#45;DOF Robots</bibtex:title>
+    <bibtex:booktitle>Intl. Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2006) </bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Aug&#45;Sep</bibtex:month>
+
+    <bibtex:pages>2722-2725</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>New York&#44; NY&#44; USA</bibtex:address>
+
+
+    <bibtex:url>cjenkins&#95;embs2006.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkins2005nips">
+  <bibtex:inproceedings>
+    <bibtex:author>O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>Data&#45;driven Motion Modeling from Kinematic Time&#45;series</bibtex:title>
+    <bibtex:booktitle>NIPS 2005 Workshop on Activity Recognition and Discovery</bibtex:booktitle>
+
+
+    <bibtex:year>2005</bibtex:year>
+
+    <bibtex:month>Dec</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Whistler&#44; BC&#44; Canada</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkins2003">
+  <bibtex:techreport>
+    <bibtex:author>Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>Relative Localization from Pairwise Distance Relationships using Kernel PCA</bibtex:title>
+
+
+
+    <bibtex:year>2003</bibtex:year>
+
+    <bibtex:month>Apr</bibtex:month>
+
+
+    <bibtex:number>CRES&#45;03&#45;010</bibtex:number>
+
+
+    <bibtex:institution>Center for Robotics and Embedded Systems&#44; University of Southern California</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>kpcaloc.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="JenkinsDissertation">
+  <bibtex:phdthesis>
+    <bibtex:author>Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>Data&#45;driven Derivation of Skills for Autonomous Humanoid Agents</bibtex:title>
+
+
+
+    <bibtex:year>2003</bibtex:year>
+
+
+
+
+
+
+
+
+
+    <bibtex:school>The University of Southern California</bibtex:school>
+
+
+
+    <bibtex:url>dissertation.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:phdthesis>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2004nss">
+  <bibtex:techreport>
+    <bibtex:author>Odest Chadwicke Jenkins and Chi&#45;Wei Chu and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Nonlinear Spherical Shells for Approximate Principal Curve Skeletonization</bibtex:title>
+
+
+
+    <bibtex:year>2004</bibtex:year>
+
+    <bibtex:month>Feb</bibtex:month>
+
+
+    <bibtex:number>Technical Report&#44; CRES&#45;04&#45;004</bibtex:number>
+
+
+    <bibtex:institution>USC Center for Robotics and Embedded Systems</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>cjenkins&#95;nss.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2000">
+  <bibtex:inproceedings>
+    <bibtex:author>O. C. Jenkins and M. Matari\&#39;c and S. Weber</bibtex:author>
+
+    <bibtex:title>Primitive&#45;Based Movement Classification for Humanoid Imitation</bibtex:title>
+    <bibtex:booktitle>IEEE International Conference on Humanoid Robots (Humanoids 2000)</bibtex:booktitle>
+
+
+    <bibtex:year>2000</bibtex:year>
+
+    <bibtex:month>Oct</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Cambridge&#44; MA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>cjenkins&#95;humanoids2000.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2004stisomap">
+  <bibtex:techreport>
+    <bibtex:author>Odest Chadwicke Jenkins and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>A Spatio&#45;temporal Extension to Isomap Nonlinear Dimension Reduction</bibtex:title>
+
+
+
+    <bibtex:year>2004</bibtex:year>
+
+    <bibtex:month>Feb</bibtex:month>
+
+
+    <bibtex:number>Technical Report&#44; CRES&#45;04&#45;003</bibtex:number>
+
+
+    <bibtex:institution>USC Center for Robotics and Embedded Systems</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>cjenkins&#95;stisomap.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="JenkinsMataric2004icml">
+  <bibtex:inproceedings>
+    <bibtex:author>Odest Chadwicke Jenkins and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>A Spatio&#45;temporal Extension to Isomap Nonlinear Dimension Reduction</bibtex:title>
+    <bibtex:booktitle>The International Conference on Machine Learning (ICML 2004)</bibtex:booktitle>
+
+
+    <bibtex:year>2004</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+    <bibtex:pages>441-448</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Banff&#44; Alberta&#44; Canada</bibtex:address>
+
+
+    <bibtex:url>cjenkins&#95;stisomap.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="JenkinsMataric2004ijhr">
+  <bibtex:article>
+    <bibtex:author>Odest Chadwicke Jenkins and Maja J. Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Performance&#45;Derived Behavior Vocabularies: Data&#45;driven Acqusition of Skills from Motion</bibtex:title>
+
+    <bibtex:journal>International Journal of Humanoid Robotics</bibtex:journal>
+
+    <bibtex:year>2004</bibtex:year>
+    <bibtex:volume>1</bibtex:volume>
+    <bibtex:month>Jun</bibtex:month>
+
+    <bibtex:pages>237-288</bibtex:pages>
+    <bibtex:number>2</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>cjenkins&#95;ijhr2004.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="JenkinsMataric2003">
+  <bibtex:inproceedings>
+    <bibtex:author>Odest Chadwicke Jenkins and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Automated Derivation of Behavior Vocabularies for Autonomous Humanoid Motion</bibtex:title>
+    <bibtex:booktitle>Autonomous Agents and Multiagent Systems (AAMAS 2003)</bibtex:booktitle>
+
+
+    <bibtex:year>2003</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+    <bibtex:pages>225-232</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Melbourne&#44; Australia</bibtex:address>
+
+
+    <bibtex:url>agents2003.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="JenkinsMataric2002">
+  <bibtex:inproceedings>
+    <bibtex:author>Odest Chadwicke Jenkins and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Deriving Action and Behavior Primitives from Human Motion Data</bibtex:title>
+    <bibtex:booktitle>IEEE Intelligent Robots and Systems (IROS 2002)</bibtex:booktitle>
+
+
+    <bibtex:year>2002</bibtex:year>
+    <bibtex:volume>3</bibtex:volume>
+    <bibtex:month>Oct</bibtex:month>
+
+    <bibtex:pages>2551&#x2013;2556</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Lausanne&#44; Switzerland</bibtex:address>
+
+
+    <bibtex:url>iros2002&#95;cjenkins.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="JenkinsMataric2002tr002">
+  <bibtex:techreport>
+    <bibtex:author>Odest Chadwicke Jenkins and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Modularization of Human Motion into Actions and Behaviors</bibtex:title>
+
+
+
+    <bibtex:year>2002</bibtex:year>
+
+    <bibtex:month>Sep</bibtex:month>
+
+
+    <bibtex:number>CRES&#45;02&#45;002</bibtex:number>
+
+
+    <bibtex:institution>Center for Robotics and Embedded Systems&#44; University of Southern California</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>motmod&#95;cjenkins.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="JenkinsMataric2001aaai">
+  <bibtex:inproceedings>
+    <bibtex:author>Odest Chadwicke Jenkins and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Primitives and Behavior&#45;Based Architectures for Interactive Entertainment</bibtex:title>
+    <bibtex:booktitle>AAAI Spring Symposium on AI and Interactive Entertainment</bibtex:booktitle>
+
+
+    <bibtex:year>2001</bibtex:year>
+
+    <bibtex:month>Mar</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Stanford&#44; CA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>aaaiss01.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2000tr385">
+  <bibtex:techreport>
+    <bibtex:author>Odest Chadwicke Jenkins and Maja J Matari\&#39;c and Stefan Weber</bibtex:author>
+
+    <bibtex:title>Primitive&#45;Based Movement Classification for Humanoid Imitation</bibtex:title>
+
+
+
+    <bibtex:year>2000</bibtex:year>
+
+
+
+
+    <bibtex:number>IRIS&#45;00&#45;385</bibtex:number>
+
+
+    <bibtex:institution>Institute for Robotics and Intelligent Systems&#44; University of Southern California</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>cjenkins&#95;humanoids2000.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="Jenkinsetal2004aaai">
+  <bibtex:inproceedings>
+    <bibtex:author>Odest Chadwicke Jenkins and Monica N. Nicolescu and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Autonomy and Supervision for Robot Skills and Tasks Learned from Demonstration</bibtex:title>
+    <bibtex:booktitle>AAAI&#45;04 Workshop on Supervisory Control of Learning and Adaptive Systems</bibtex:booktitle>
+
+
+    <bibtex:year>2004</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>aaai&#45;sc&#45;camera.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="JenkinsSwepson2005sca">
+  <bibtex:inproceedings>
+    <bibtex:author>O. C. Jenkins and C. I. Swepson</bibtex:author>
+
+    <bibtex:title>Keyframing by Segmentation of Kinematic Motion</bibtex:title>
+    <bibtex:booktitle>ACM Symposium on Computer Animation Posters (SCA 2005)</bibtex:booktitle>
+
+
+    <bibtex:year>2005</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Katzourinetal2006">
+  <bibtex:article>
+    <bibtex:author>Katzourin&#44; Michael and Ignatoff&#44; Daniel and Quirk&#44; Lincoln and LaViola&#44; Joseph J. and Jenkins&#44; Odest Chadwicke</bibtex:author>
+
+    <bibtex:title>Swordplay: Innovating Game Development through VR</bibtex:title>
+
+    <bibtex:journal>IEEE Comput. Graph. Appl.</bibtex:journal>
+    <bibtex:publisher>IEEE Computer Society Press</bibtex:publisher>
+    <bibtex:year>2006</bibtex:year>
+    <bibtex:volume>26</bibtex:volume>
+
+
+    <bibtex:pages>15&#x2013;19</bibtex:pages>
+    <bibtex:number>6</bibtex:number>
+
+
+
+
+
+    <bibtex:address>Los Alamitos&#44; CA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>http://doi.ieeecomputersociety.org/10.1109/MCG.2006.137</bibtex:url>
+    <bibtex:doi>http://dx.doi.org/10.1109/MCG.2006.137</bibtex:doi>
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Kimetal2006">
+  <bibtex:inproceedings>
+    <bibtex:author>S&#45;.P. Kim and J.D. Simeral and O.C. Jenkins and J.P. Donoghue and M.J. Black</bibtex:author>
+
+    <bibtex:title>Finding directional movement representations in motor cortical neural populations using nonlinear manifold learning</bibtex:title>
+    <bibtex:booktitle>World Congress on Medical Physics and Biomedical Engineering 2006</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Aug</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Seoul&#44; Korea</bibtex:address>
+
+
+    <bibtex:url>http://www.cs.brown.edu/people/spkim/publication/wc2006.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Kimetal2009aimag">
+  <bibtex:article>
+    <bibtex:author>Kim&#44; Y. and Oh&#44; P. and Jenkins&#44; O.</bibtex:author>
+
+    <bibtex:title>The AAAI 2008 Robotics and Creativity Workshop</bibtex:title>
+
+    <bibtex:journal>AI Magazine</bibtex:journal>
+
+    <bibtex:year>2009</bibtex:year>
+    <bibtex:volume>30</bibtex:volume>
+
+
+    <bibtex:pages>103-107</bibtex:pages>
+    <bibtex:number>1</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>http://www.aaai.org/ojs/index.php/aimagazine/article/view/2218</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Koenigetal2008aaai">
+  <bibtex:inproceedings>
+    <bibtex:author>N. Koenig and S. Chernova and C. Jones and M. Loper and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Hands&#45;Free Human&#45;Robot Interaction</bibtex:title>
+    <bibtex:booktitle>AAAI 2008 Video Program</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Chicago&#44; IL&#44; USA</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Koenigetal2008hri">
+  <bibtex:inproceedings>
+    <bibtex:author>N. Koenig and S. Chernova and C. Jones and M. Loper and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Hands&#45;Free Human&#45;Robot Interaction</bibtex:title>
+    <bibtex:booktitle>HRI 2008 Video Program</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Mar</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Amsterdam&#44; Netherlands</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Koenigetal2008icra">
+  <bibtex:inproceedings>
+    <bibtex:author>N. Koenig and S. Chernova and C. Jones and M. Loper and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Hands&#45;Free Interaction for Human&#45;Robot Teams</bibtex:title>
+    <bibtex:booktitle>ICRA 2008 Workshop on Social interaction with intelligent indoor robots</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>May</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Pasadena&#44; CA&#44; USA</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Kostandovetal2007siggraph">
+  <bibtex:inproceedings>
+    <bibtex:author>M. Kostandov and J. Schwertfeger and O. Jenkins and R. Jianu and M. Buller and D. Hartmann and M. Loper and A. Tsoli and M. Vondrak and W. Zhou</bibtex:author>
+
+    <bibtex:title>Robot Gaming and Learning using Augmented Reality</bibtex:title>
+    <bibtex:booktitle>ACM SIGGRAPH Technical Posters</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Aug</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>San Diego&#44; CA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>Kostandov&#45;2007&#45;RGL.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="LappingCarretal2008aaai">
+  <bibtex:inproceedings>
+    <bibtex:author>M. Lapping&#45;Carr and O.C. Jenkins and D.H. Grollman and J.N. Schwertfeger and T.R. Hinkle</bibtex:author>
+
+    <bibtex:title>Wiimote Interfaces for Lifelong Robot Learning</bibtex:title>
+    <bibtex:booktitle>AAAI Symposium on Using AI to Motivate Greater Participation in Computer Science</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Mar</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Palo Alto&#44; CA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>SS08LappingCarrM&#95;aaai2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Lelandetal2006robocup">
+  <bibtex:techreport>
+    <bibtex:author>E. Leland and O. Jenkins and B. Dickinson and D. Grollman and M. Moseley</bibtex:author>
+
+    <bibtex:title>The Brown University Robocup 2006 Four&#45;Legged League Team Report</bibtex:title>
+
+
+
+    <bibtex:year>2006</bibtex:year>
+
+
+
+
+
+
+
+    <bibtex:institution>Brown University&#44; Department of Computer Science</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>http://www.cs.brown.edu/research/pubs/theses/masters/2006/eleland.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="Lelandetal2005">
+  <bibtex:article>
+    <bibtex:author>E. Leland and O. C. Jenkins and K. Bradford</bibtex:author>
+
+    <bibtex:title>Robosapien Localization and Control</bibtex:title>
+
+    <bibtex:journal>Circuit Cellar Magazine</bibtex:journal>
+
+    <bibtex:year>2006</bibtex:year>
+    <bibtex:volume>188</bibtex:volume>
+    <bibtex:month>Mar</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>http://www.circuitcellar.com/library/print/0306/Leland&#45;188/Leland&#45;188.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+    <bibtex:note>Honorable Mention&#44; Freescale Semiconductor Zigbee Wireless Design Challenge</bibtex:note>
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Loperetal2009hri">
+  <bibtex:inproceedings>
+    <bibtex:author>Loper&#44; M. and Koenig&#44; N. and Chernova&#44; S. and Jenkins&#44; O. and Jones&#44; C.</bibtex:author>
+
+    <bibtex:title>Mobile Human&#45;Robot Teaming with Environmental Tolerance</bibtex:title>
+    <bibtex:booktitle>Human&#45;Robot Interaction (HRI 2009)</bibtex:booktitle>
+
+
+    <bibtex:year>2009</bibtex:year>
+
+    <bibtex:month>Mar</bibtex:month>
+
+    <bibtex:pages>157-164</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>San Diego&#44; CA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>matt&#95;hri2009.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="LoperJenkins2005">
+  <bibtex:techreport>
+    <bibtex:author>Matthew Maverick Loper and Odest Chadwicke Jenkins</bibtex:author>
+
+    <bibtex:title>Real&#45;time Silhouette Intersection by Maintaining the Distribution of Occupancy</bibtex:title>
+
+
+
+    <bibtex:year>2005</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+
+    <bibtex:number>Technical Report&#44; cs05&#45;12</bibtex:number>
+
+
+    <bibtex:institution>Brown Computer Science Department</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>http://www.cs.brown.edu/publications/techreports/reports/CS&#45;05&#45;12.html</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="Malliosetal2005">
+  <bibtex:inproceedings>
+    <bibtex:author>J. Mallios and N. Mehta and C. Street and O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>Modular Dynamic Response from Motion Databases</bibtex:title>
+    <bibtex:booktitle>SIGGRAPH 2005 Posters</bibtex:booktitle>
+
+
+    <bibtex:year>2005</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>siggraph&#95;modularresponse.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Mataricetal2000aaai">
+  <bibtex:inproceedings>
+    <bibtex:author>Maja J Matari\&#39;c and Odest Chadwicke Jenkins and Ajo Fod and Victor B. Zordan</bibtex:author>
+
+    <bibtex:title>Control and Imitation in Humanoids</bibtex:title>
+    <bibtex:booktitle>AAAI Fall Symposium on Simulating Human Agents</bibtex:booktitle>
+
+
+    <bibtex:year>2000</bibtex:year>
+
+    <bibtex:month>Nov</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>North Falmouth&#44; MA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>aaaifs00&#45;hum.ps.gz</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="McGuireJenkins2008">
+  <bibtex:book>
+    <bibtex:author>M. McGuire and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Creating Games: Mechanics&#44; Content&#44; and Technology</bibtex:title>
+
+
+    <bibtex:publisher>AK Peters</bibtex:publisher>
+    <bibtex:year>2009</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>http://www.akpeters.com/product.asp&#63;ProdCode=3058</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:book>
+</bibtex:entry>
+<bibtex:entry id="Milleretal2004">
+  <bibtex:techreport>
+    <bibtex:author>Nathan Miller and Odest Chadwicke Jenkins and Marcelo Kallmann and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Motion Capture from Inertial Sensing for Untethered Humanoid Teleoperation</bibtex:title>
+
+
+
+    <bibtex:year>2004</bibtex:year>
+
+    <bibtex:month>Jun</bibtex:month>
+
+
+    <bibtex:number>Technical Report&#44; CRES&#45;04&#45;010</bibtex:number>
+
+
+    <bibtex:institution>USC Center for Robotics and Embedded Systems</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>humanoids2004&#45;imu.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="Milleretal2004humanoids">
+  <bibtex:inproceedings>
+    <bibtex:author>Nathan Miller and Odest Chadwicke Jenkins and Marcelo Kallmann and Maja J Matari\&#39;c</bibtex:author>
+
+    <bibtex:title>Motion Capture from Inertial Sensing for Untethered Humanoid Teleoperation</bibtex:title>
+    <bibtex:booktitle>IEEE International Conference on Humanoid Robots (Humanoids 2004)</bibtex:booktitle>
+
+
+    <bibtex:year>2004</bibtex:year>
+
+    <bibtex:month>Nov</bibtex:month>
+
+    <bibtex:pages>547-565</bibtex:pages>
+
+
+
+
+
+
+
+
+
+    <bibtex:url>humanoids2004&#45;imu.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Nicolescuetal2006roman">
+  <bibtex:inproceedings>
+    <bibtex:author>M. Nicolescu and O. Jenkins and A. Olenderski</bibtex:author>
+
+    <bibtex:title>Learning Behavior Fusion Estimation from Demonstration</bibtex:title>
+    <bibtex:booktitle>IEEE International Symposium on Robot and Human Interactive Communication (RO&#45;MAN 2006)</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Sep</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Hatfield&#44; United Kingdom</bibtex:address>
+
+
+    <bibtex:url>roman06.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Nicolescuetal2007is">
+  <bibtex:article>
+    <bibtex:author>M.N. Nicolescu and O.C. Jenkins and A. Olenderski and E. Fritzinger</bibtex:author>
+
+    <bibtex:title>Learning Behavior Fusion from Demonstration</bibtex:title>
+
+    <bibtex:journal>Interaction Studies</bibtex:journal>
+
+    <bibtex:year>2008</bibtex:year>
+    <bibtex:volume>9</bibtex:volume>
+    <bibtex:month>Jun</bibtex:month>
+
+    <bibtex:pages>319-352</bibtex:pages>
+    <bibtex:number>2</bibtex:number>
+
+
+
+
+
+
+
+
+    <bibtex:url>http://www.cse.unr.edu/&#126;monica/Research/Publications/is2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:article>
+</bibtex:entry>
+<bibtex:entry id="Nicolescuetal2007icdl">
+  <bibtex:inproceedings>
+    <bibtex:author>M.N. Nicolescu and O.C. Jenkins and A. Stanhope</bibtex:author>
+
+    <bibtex:title>Fusing Robot Behaviors for Human&#45;Level Tasks</bibtex:title>
+    <bibtex:booktitle>International Conference on Development and Learning (ICDL 2007)</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+    <bibtex:pages>76-81</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>London&#44; England</bibtex:address>
+
+
+    <bibtex:url>monica&#95;icdl2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Nicolescuetal2006dis">
+  <bibtex:inproceedings>
+    <bibtex:author>Monica Nicolescu and Odest Chadwicke Jenkins and Adam Olenderski</bibtex:author>
+
+    <bibtex:title>Behavior Fusion Estimation for Robot Learning from Demonstration</bibtex:title>
+    <bibtex:booktitle>IEEE Workshop on Distributed Intelligent Systems (DIS&#39;06)</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+
+
+    <bibtex:pages>31&#x2013;36</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Prague&#44; Czech Republic</bibtex:address>
+
+
+    <bibtex:url>dis06.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Osentoskietal2010aaawrkshp">
+  <bibtex:inproceedings>
+    <bibtex:author>S. Osentoski and G. Jay and C. Crick and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Brown ROS Package: Reproducibility for Shared Experimentation and Learning from Demonstration</bibtex:title>
+    <bibtex:booktitle>AAAI&#45;10 Robot Workshop</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+    <bibtex:address>Atlanta&#44; GA</bibtex:address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Osentoskietal2010nipswrkshp">
+  <bibtex:inproceedings>
+    <bibtex:author>S. Osentoski and G. Jay and C. Crick and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Crowdsourcing for closed loop control</bibtex:title>
+    <bibtex:booktitle>NIPS Workshop on Computational Social Science and the Wisdom of Crowds</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Osentoskietal2011icra">
+  <bibtex:inproceedings>
+    <bibtex:author>S. Osentoski and G. Jay and C. Crick and B. Pitzer and C. DuHadway and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Robots as web services: Reproducible experimentation and application development using rosjs</bibtex:title>
+    <bibtex:booktitle>International Conference on Robotics and Automation (ICRA 2011)</bibtex:booktitle>
+
+
+    <bibtex:year>2011</bibtex:year>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="OsentoskiMahadevan2010aamas">
+  <bibtex:inproceedings>
+    <bibtex:author>Osentoski&#44; S. and Mahadevan&#44; S.</bibtex:author>
+
+    <bibtex:title>Basis Function Construction for Hierarchical Reinforcement Learning</bibtex:title>
+    <bibtex:booktitle>Nineth International Conference on Autonmous Agents and Multiagent Systems (AAMAS)</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+    <bibtex:month>May</bibtex:month>
+
+    <bibtex:pages>in press</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Toronto&#44; Canada</bibtex:address>
+
+
+    <bibtex:url>sosentos&#95;aamas2010.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="PetersJenkins2005humanoids">
+  <bibtex:inproceedings>
+    <bibtex:author>R. A. Peters and O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>Uncovering Manifold Structures in Robonaut&#39;s Sensory&#45;Data State Space</bibtex:title>
+    <bibtex:booktitle>IEEE International Conference on Humanoid Robotics (Humanoids 2005)</bibtex:booktitle>
+
+
+    <bibtex:year>2005</bibtex:year>
+
+    <bibtex:month>Dec</bibtex:month>
+
+    <bibtex:pages>369-374</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Tsukuba&#44; Japan</bibtex:address>
+
+
+    <bibtex:url>humanoids2005.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Petersetal2006humanoids">
+  <bibtex:inproceedings>
+    <bibtex:author>R.A. Peters and O.C. Jenkins and R.E. Bodenheimer</bibtex:author>
+
+    <bibtex:title>Sensory&#45;Motor Manifold Structure Induced by Task Outcome: Experiments with Robonaut</bibtex:title>
+    <bibtex:booktitle>IEEE International Conference on Humanoid Robotics (Humanoids 2006)</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Dec</bibtex:month>
+
+    <bibtex:pages>484-489</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Genoa&#44; Italy</bibtex:address>
+
+
+    <bibtex:url>rap2&#45;humanoids2006.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="SchwertfegerJenkins2007icdl">
+  <bibtex:inproceedings>
+    <bibtex:author>J.N. Schwertfeger and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>Multi&#45;Robot Belief Propagation for Distributed Robot Allocation</bibtex:title>
+    <bibtex:booktitle>International Conference on Development and Learning (ICDL 2007)</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+    <bibtex:pages>193-198</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>London&#44; England</bibtex:address>
+
+
+    <bibtex:url>js&#95;icdl2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Steinfeldetal2009hri">
+  <bibtex:inproceedings>
+    <bibtex:author>Steinfeld&#44; A. and Jenkins&#44; O. and Scassellati&#44; B.</bibtex:author>
+
+    <bibtex:title>The Oz of Wizard: Simulating the Human for Interaction Research</bibtex:title>
+    <bibtex:booktitle>Human&#45;Robot Interaction (HRI 2009)</bibtex:booktitle>
+
+
+    <bibtex:year>2009</bibtex:year>
+
+    <bibtex:month>Mar</bibtex:month>
+
+    <bibtex:pages>101-108</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>San Diego&#44; CA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>steinfeld&#95;hri2009.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="TsoliJenkins2007isrr">
+  <bibtex:inproceedings>
+    <bibtex:author>A. Tsoli and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>Robot Grasping for Prosthetic Applications</bibtex:title>
+    <bibtex:booktitle>International Symposium of Robotics Research (ISRR2007)</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Nov</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>aggeliki&#95;isrr2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="TsoliJenkins2007maia">
+  <bibtex:inproceedings>
+    <bibtex:author>A. Tsoli and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>Cursor&#45;controlled prosthetic grasping from 2D subspaces</bibtex:title>
+    <bibtex:booktitle>MAIA Workshop &#96;&#96;BCI Meets Robotics&#39;&#39;: Challenging Issues in Brain&#45;Computer Interaction and Shared Control</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Nov</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Leuven&#44; Belgium</bibtex:address>
+
+
+    <bibtex:url>aggeliki&#95;bci2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="TsoliJenkins2007rss">
+  <bibtex:inproceedings>
+    <bibtex:author>A. Tsoli and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>2D Subspaces for User&#45;Driven Robot Grasping</bibtex:title>
+    <bibtex:booktitle>Robotics: Science and Systems &#45; Robot Manipulation: Sensing and Adapting to the Real World</bibtex:booktitle>
+
+
+    <bibtex:year>2007</bibtex:year>
+
+    <bibtex:month>Jun</bibtex:month>
+
+
+
+
+
+
+
+
+
+
+
+    <bibtex:url>aggeliki&#95;rss2007.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="TsoliJenkins2008iros">
+  <bibtex:inproceedings>
+    <bibtex:author>A. Tsoli and O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>Neighborhood denoising for learning high&#45;dimensional grasping manifolds</bibtex:title>
+    <bibtex:booktitle>International Conference on Intelligent Robots and Systems (IROS 2008)</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Sep</bibtex:month>
+
+    <bibtex:pages>3680-3685</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Nice&#44; France</bibtex:address>
+
+
+    <bibtex:url>aggeliki&#95;iros2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="TsoliJenkins2008iroswk">
+  <bibtex:inproceedings>
+    <bibtex:author>A. Tsoli and O. C. Jenkins</bibtex:author>
+
+    <bibtex:title>Learning 2D Subspaces for User&#45;Controlled Robot Grasping</bibtex:title>
+    <bibtex:booktitle>International Conference on Intelligent Robots and Systems Workshop on Robot Learning</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Sep</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Nice&#44; France</bibtex:address>
+
+
+    <bibtex:url>aggeliki&#95;iros2008&#95;robotlearning.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Vondraketal2009mc">
+  <bibtex:incollection>
+    <bibtex:author>M. Vondrak and L. Sigal and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>Dynamics and Control of Multibody Systems</bibtex:title>
+    <bibtex:booktitle>Motion Control</bibtex:booktitle>
+
+
+    <bibtex:year>2010</bibtex:year>
+
+    <bibtex:month>Jan</bibtex:month>
+
+    <bibtex:pages>1-30</bibtex:pages>
+
+
+
+
+
+
+
+
+
+    <bibtex:url>http://sciyo.com/articles/show/title/dynamics&#45;and&#45;control&#45;of&#45;multibody&#45;systems</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:incollection>
+</bibtex:entry>
+<bibtex:entry id="Vondraketal2008cvpr">
+  <bibtex:inproceedings>
+    <bibtex:author>M. Vondrak and L. Sigal and O.C. Jenkins</bibtex:author>
+
+    <bibtex:title>Physical Simulation for Probabilistic Motion Tracking</bibtex:title>
+    <bibtex:booktitle>Computer Vision and Pattern Recognition (CVPR 2008)</bibtex:booktitle>
+
+
+    <bibtex:year>2008</bibtex:year>
+
+    <bibtex:month>Jun</bibtex:month>
+
+    <bibtex:pages>1-8</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Anchorage&#44; AK&#44; USA</bibtex:address>
+
+
+    <bibtex:url>marek&#95;cvpr2008.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Weberetal2000">
+  <bibtex:inproceedings>
+    <bibtex:author>S. Weber and M. Matari\&#39;c and O. Jenkins</bibtex:author>
+
+    <bibtex:title>Imitation Using Perceptuo&#45;Motor Primitives</bibtex:title>
+    <bibtex:booktitle>Autonomous Agents</bibtex:booktitle>
+
+
+    <bibtex:year>2000</bibtex:year>
+
+
+
+    <bibtex:pages>136&#x2013;137</bibtex:pages>
+
+
+
+
+
+
+    <bibtex:address>Barcelona&#44; Spain</bibtex:address>
+
+
+    <bibtex:url>aa00&#45;wstefan.ps.gz</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Grollmanetal2008tr">
+  <bibtex:techreport>
+    <bibtex:author>Frank Wood and Dan H. Grollman and K. A. Heller and Odest Chadwicke Jenkins and Michael Black</bibtex:author>
+
+    <bibtex:title>Incremental Nonparametric Bayesian Regression</bibtex:title>
+
+
+
+    <bibtex:year>2008</bibtex:year>
+
+
+
+
+    <bibtex:number>CS&#45;08&#45;07</bibtex:number>
+
+
+    <bibtex:institution>Brown University Department of Computer Science</bibtex:institution>
+
+
+
+
+
+    <bibtex:url>http://www.cs.brown.edu/publications/techreports/reports/CS&#45;08&#45;07.html</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:techreport>
+</bibtex:entry>
+<bibtex:entry id="Wroteketal2006sandbox">
+  <bibtex:inproceedings>
+    <bibtex:author>P. Wrotek and O. Jenkins and M. McGuire</bibtex:author>
+
+    <bibtex:title>Dynamo: Dynamic Data&#45;driven Character Control with Adjustable Balance</bibtex:title>
+    <bibtex:booktitle>ACM SIGGRAPH Video Game Symposium</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Jul</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Boston&#44; MA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>http://graphics.cs.brown.edu/games/Dynamo/Sandbox06/dynamo.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+<bibtex:entry id="Wroteketal2006siggraph">
+  <bibtex:inproceedings>
+    <bibtex:author>P. Wrotek and O. Jenkins and M. McGuire</bibtex:author>
+
+    <bibtex:title>World Space Servoing for Character Animation under Simulation</bibtex:title>
+    <bibtex:booktitle>ACM SIGGRAPH Technical Sketches</bibtex:booktitle>
+
+
+    <bibtex:year>2006</bibtex:year>
+
+    <bibtex:month>Aug</bibtex:month>
+
+
+
+
+
+
+
+
+    <bibtex:address>Boston&#44; MA&#44; USA</bibtex:address>
+
+
+    <bibtex:url>http://graphics.cs.brown.edu/games/Dynamo/SIGGRAPH06/sig06&#45;world&#45;space&#45;sketch.pdf</bibtex:url>
+
+
+
+
+
+
+
+
+
+
+
+
+  </bibtex:inproceedings>
+</bibtex:entry>
+</bibtex:file>
